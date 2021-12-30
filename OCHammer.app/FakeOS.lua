@@ -391,8 +391,7 @@ elseif random_thing == 2 or 3 then
       
       gp.setBackground(back)
       gp.setForeground(fore)
-    end--5)
-    )
+    end,5)
 end
 
 -- Logging in
