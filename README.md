@@ -1,4 +1,4 @@
-# OpenComputers malware
+# Cool OpenComputers apps I made
 This repository contains all OpenComputers malware I made.
 
 All apps are installed from the MineOS App Store unless noted othewise.
