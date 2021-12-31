@@ -8,7 +8,16 @@ local resX,resY = gp.maxResolution()
 
 local random_thing = math.random(1,10)
 
-local damn = "nice"
+local words = {
+  "Unicorns no more!";
+  "Haters get stitches";
+  "Free robux here";
+  "Oh hell no";
+  "Damn, nice game";
+  "Unbox a Computer is better"
+ }
+
+local damn = words[math.random(1,#words)]
 
 function lol()
   
@@ -310,6 +319,8 @@ local system = UIRequire("System")
 UIRequire("Network")
 
 -- Filling package.loaded with default global variables for OpenOS bitches
+-- Feel free to look at OCHammer's Credits.app!
+
 package.loaded.bit32 = bit32
 package.loaded.computer = computer
 package.loaded.component = component
@@ -366,7 +377,7 @@ event.addHandler(
   end
 )
 
--- The EEPROM handler so you wont break the rules lol
+-- The virus routine acting up.
 
 if random_thing == 1 then
   event.addHandler(
