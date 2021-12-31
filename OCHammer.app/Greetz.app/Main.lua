@@ -27,10 +27,12 @@ local function GREETZ()
     " ";
     "OCHammer includes payloads from malware(-s) featured in danooct1's YouTube channel. (MineOS App Store too!)";
     " ";
-    "Direct all hate to: URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael and cclys on Roblox.com";
+    "Direct all hate to: URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael, magicloveyyy, Savageking24463, Unicornloveheartyyaa and cclys on Roblox.com";
     " ";
     "GREETZ: OCboy3";
   }
+  
+  --- Unicornloveheartyyaa Eats dog poop for dinner. (tottally accurate rep of haters)
   
   for index, thing in pairs(stuff_to_say) do
     set(3,index+1,thing)
