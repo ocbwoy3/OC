@@ -27,7 +27,8 @@ local function GREETZ()
     " ";
     "OCHammer includes payloads from malware(-s) featured in danooct1's YouTube channel. (MineOS App Store too!)";
     " ";
-    "Direct all hate to: URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael, magicloveyyy, Savageking24463, Unicornloveheartyyaa and cclys on Roblox.com";
+    "Direct all hate to: URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael, magicloveyyy,";
+    "Savageking24463, Unicornloveheartyyaa and cclys on Roblox.com";
     " ";
     "GREETZ: OCboy3";
   }
