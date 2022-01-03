@@ -5,10 +5,17 @@ All apps are installed from the MineOS App Store unless noted othewise.
 
 ## OCHammer
 **OCHammer is a Malware for MineOS (OpenComputers operating system)**<br>
-The EEPROM erasure and READ ONLY is not real!!!
+The EEPROM erasure and READ ONLY is not real!!! But it sure does overwrite your EEPROM.
 ### Uninstallation
 To remove the OCHammer virus, follow these steps:
-<br>**1)** Run OCHammer *(Located in the "/Applications" folder)* with the arguments "--restore" and follow the steps on the screen.
-<br>**2)** Delete the spam icons from the desktop. Empty the trash if necessary.
-<br>**3)** Open finder and go to "/MineOS", delete Greetz.app
-<br>**4)** Uninstall the app from the MineOS app store, if it isn't.
+<br>**1)** Flash a clean copy of MineOS EFI to the computer's eeprom by using any means possible. *(PC EEPROM slot or OpenSecurity Card Writer)*\
+<br>**2)** Boot the PC into OpenOS and run the following commands: *(replace the xxx with the mount point you want to restore OS.lua in)*
+<br> 
+```
+wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xxx/OS.lua
+```
+<br>**3)** Boot the PC into MineOS
+<br>**4)** Run OCHammer *(Located in the "/Applications" folder)* with the arguments "--restore" and follow the steps on the screen. *(if necessary)*
+<br>**5)** Delete the spam icons from the desktop. Empty the trash if necessary.
+<br>**6)** Open finder and go to "/MineOS", delete Greetz.app
+<br>**7)** Uninstall the app from the MineOS app store, if it isn't.
