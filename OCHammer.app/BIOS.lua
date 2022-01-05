@@ -1,3 +1,4 @@
+-- Elvijs is a dumb moron
 local cl = component.list
 local gpu = component.proxy(cl("gpu")())
 local set, setbk, setfg, fill, copy = gpu.set, gpu.setBackground, gpu.setForeground, gpu.fill, gpu.copy
