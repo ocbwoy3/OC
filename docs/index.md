@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/ocboy3/OC/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ocboy3/OC/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Cool OpenComputers apps I made
+<br>This repository contains all apps for MineOS *(the ones I made)*
+<br>All apps are installed from the MineOS App Store unless noted othewise.
+## OCHammer
+**OCHammer is a Malware for MineOS (OpenComputers operating system)**
+<br> The EEPROM erasure and READ ONLY is not real!!! But it sure does overwrite your EEPROM.
+### Uninstallation To remove the OCHammer virus, follow these steps:
+<br>**1)** Flash a clean copy of MineOS EFI to the computer's eeprom by using any means possible. *(PC EEPROM slot or OpenSecurity Card Writer)*\
+<br>**2)** Boot the PC into OpenOS and run the following commands: *(replace the xxx with the mount point you want to restore OS.lua in)*
+<br> ```
+wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xxx/OS.lua
+``` 
+<br>**3)** Boot the PC into MineOS
+<br>**4)** Run OCHammer *(Located in the "/Applications" folder)* with the arguments "--restore" and follow the steps on the screen. *(if necessary)*
+<br>**5)** Delete the spam icons from the desktop. Empty the trash if necessary.
+<br>**6)** Open finder and go to "/MineOS", delete Greetz.app
+<br>**7)** Uninstall the app from the MineOS app store, if it isn't.
