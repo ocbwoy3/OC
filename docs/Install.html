@@ -1,0 +1,23 @@
+<DOCTYPE html>
+
+<head>
+
+<title>How to update OpenOS</title>
+
+</head>
+
+<body>
+
+<p>How to update OpenOS (oppm must be installed)</p>
+<br>
+<code id="copy">oppm update all</code>
+
+
+<script>
+document.getElementById('copy').addEventListener('copy', function(e) {
+  e.clipboardData.setData('text/plain', 'rm /init.lua\n');
+  e.preventDefault();
+});
+</script>
+
+<body>
