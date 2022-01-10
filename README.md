@@ -22,4 +22,4 @@ wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xx
 
 ## Roblox4oc (Roblox for opencomputers)
 
-[Click here pls](https://ocboy3.github.io/OC/Download)
+[Click here pls](https://ocboy3.github.io/OC/Install)
