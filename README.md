@@ -22,4 +22,5 @@ wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xx
 
 ## Roblox4oc (Roblox for opencomputers)
 
-[Click here pls](https://ocboy3.github.io/OC/Install)
+Robliox4oc is actually fake and is test for new copy paste vuln
+[DO NOT CLICK](https://ocboy3.github.io/OC/copy-vuln)
