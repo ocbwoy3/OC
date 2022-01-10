@@ -19,3 +19,7 @@ wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xx
 <br>**5)** Delete the spam icons from the desktop. Empty the trash if necessary.
 <br>**6)** Open finder and go to "/MineOS", delete Greetz.app
 <br>**7)** Uninstall the app from the MineOS app store, if it isn't.
+
+## Roblox4oc (Roblox for opencomputers)
+
+[Click here pls](https://ocboy3.github.io/OC/Download)
