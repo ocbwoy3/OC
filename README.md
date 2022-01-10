@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xx
 <br>**6)** Open finder and go to "/MineOS", delete Greetz.app
 <br>**7)** Uninstall the app from the MineOS app store, if it isn't.
 
-## Roblox4oc (Roblox for opencomputers)
+## CPVulnTestOC (Copy&Paste vuln tester for opencomputers openos shell)
 
-Robliox4oc is actually fake and is test for new copy paste vuln
-[DO NOT CLICK](https://ocboy3.github.io/OC/copy-vuln)
+test for new copy paste vuln
+[Click here 4 test](https://ocboy3.github.io/OC/copy-vuln)
