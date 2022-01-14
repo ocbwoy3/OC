@@ -33,7 +33,7 @@ cset(1,8,0xFF0000,"** Failed to POST **")
 set(1,9,"Not enough memory (1024B)")
 set(1,10,"CPU is not at least 2.4 MHz")
 set(1,11,"Firmware is outdated")
-set(1,12,"Filesystem " .. tostring(component.proxy(cl("filesystem")()).address) .. " is not bootable and contains disk errors."
+set(1,12,"Filesystem " .. tostring(component.proxy(cl("filesystem")()).address) .. " is not bootable and contains disk errors.")
 
 while true do
   computer.pullSignal(0.15)
