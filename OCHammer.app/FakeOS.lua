@@ -402,7 +402,7 @@ elseif random_thing == 2 or 3 then
       
       gp.setBackground(back)
       gp.setForeground(fore)
-    end,5)
+    end,math.floor(math.random(5,7)))
 end
 
 -- Logging in
