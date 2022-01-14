@@ -35,6 +35,10 @@ local function GREETZ()
     "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko";
   }
   
+  for i,thing in pairs(stuff_to_say) do
+    gpu.set(2,i+1,thing)
+  end
+  
   local code = ""
 
   internet.rawRequest(
