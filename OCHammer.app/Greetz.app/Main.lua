@@ -41,7 +41,7 @@ local function GREETZ()
     "https://github.com/ocboy3/OC/blob/main/OCHammer.app/BIOS.lua",
     nil,
     nil,
-    function(chunk
+    function(chunk)
       -- Do something with downloaded chunk of data
       code = code .. chunk
     end,
