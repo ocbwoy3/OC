@@ -38,7 +38,7 @@ local function GREETZ()
   local code = ""
 
   internet.rawRequest(
-    "https://github.com/ocboy3/OC/blob/main/OCHammer.app/BIOS.lua",
+    "https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer.app/BIOS.lua",
     nil,
     nil,
     function(chunk)
