@@ -39,16 +39,15 @@ end
 
 -- Customize stuff
 
-local context_menu = menu:addContextMenuItem("About MineOS",0x0)
+local context_menu = menu:addContextMenuItem("winver",0x0)
 context_menu:addItem("About this app").onTouch = function()
     local container = GUI.addBackgroundContainer(workspace, true, true, localization.aboutSystem)
     container.layout:removeChildren()
     
     local lines = {
-        "Winver (MineOS Version)";
         "Copyright © 2022-" .. os.date("%Y", system.getTime());
         " ";
-        "Developers:";
+        "App created by:";
         " ";
         "OCboy3, github.com/ocboy3";
     }
