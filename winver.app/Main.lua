@@ -33,18 +33,21 @@ local winver_lines = {
     system.getUser();
 }
 
+
+
 for i, text in pairs(winver_lines) do
     layout:addChild(GUI.text(1, i, 0x4B4B4B, text))
 end
 
 -- Customize stuff
 
-local context_menu = menu:addContextMenuItem("winver",0x0)
-context_menu:addItem("About this app").onTouch = function()
-    local container = GUI.addBackgroundContainer(workspace, true, true, localization.aboutSystem)
+local context_menu = menu:addContextMenuItem("About OpenComputer",0x0)
+context_menu:addItem("About").onTouch = function()
+    local container = GUI.addBackgroundContainer(workspace, true, true, "About")
     container.layout:removeChildren()
     
     local lines = {
+        "about-opencomputer";
         "Copyright © 2022-" .. os.date("%Y", system.getTime());
         " ";
         "App created by:";
@@ -57,6 +60,8 @@ context_menu:addItem("About this app").onTouch = function()
     textBox.eventHandler = container.panel.eventHandler
 
     workspace:draw()
+
+end
 
 -- Create callback function with resizing rules when window changes its' size
 window.onResize = function(newWidth, newHeight)
