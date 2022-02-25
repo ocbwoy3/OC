@@ -20,7 +20,6 @@ wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xx
 <br>**6)** Open finder and go to "/MineOS", delete Greetz.app
 <br>**7)** Uninstall the app from the MineOS app store, if it isn't.
 
-## CPVuln
-
-Test yourself for the New Copy&Paste vuln
-[Click here to test](https://ocboy3.github.io/OC/copy-vuln)
+## about-opencomputer
+winver copy but for opencomputers operating system
+idk its wip
