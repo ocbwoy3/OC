@@ -20,6 +20,7 @@ wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xx
 <br>**6)** Open finder and go to "/MineOS", delete Greetz.app
 <br>**7)** Uninstall the app from the MineOS app store, if it isn't.
 
-## 000
-**000 is ANOTHER malware for MineOS (OpenComputers operating system)**<br>
+## OCHammer 2
+**OCHammer, but more destructive**<br>
+
 It is WIP.
