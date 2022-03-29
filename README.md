@@ -1,5 +1,5 @@
 # Cool OpenComputers apps I made
-This repository contains all apps for MineOS *(the ones I made)*
+This repository contains (almost) all of the apps for MineOS *(the ones I made)*
 
 All apps are installed from the MineOS App Store unless noted othewise.
 
