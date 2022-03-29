@@ -1,5 +1,5 @@
 Your OpenComputer got pwned by OCHammer 2
-You won't be able to boot your OpenComputer as it's EEPROM has been erased and made read-only.
+You won't be able to boot your OpenComputer as it's EEPROM has been overwritten and made read-only.
 Only you can save it!
 
 RULES:

