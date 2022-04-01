@@ -7,8 +7,8 @@ local cp = {} for a,b in pairs(component.proxy(cl("computer")())) do cp[a]=b end
 local resX,resY = gp.maxResolution()
 
 function fun()
-  -- Erase all disks connected
-  for k,v in pairs(cl("disk")) do
+  -- Erase all filesystems connected!!!! copilot tought the component name was disk, btw copilot helped me with some of the features
+  for k,v in pairs(cl("filesystem")) do
     local d = component.proxy(v)
     pcall(d,"remove","/")
   end
