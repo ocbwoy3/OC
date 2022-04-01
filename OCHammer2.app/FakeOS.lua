@@ -124,9 +124,7 @@ end
 gp.setBackground(0x000000)
 gp.setForeground(0xFFFFFF)
 
-local mx, my = gp.getMaxResolution()
-
-gp.fill(1,1,mx,my," ")
+gp.fill(1,1,300,300," ")
 
 -- display some greetz and stuff
 displayTable(smart)
