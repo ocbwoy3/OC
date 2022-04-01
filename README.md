@@ -9,10 +9,13 @@ The EEPROM erasure and READ ONLY is not real!!! But it sure does overwrite your 
 ### Uninstallation
 To remove the OCHammer virus, follow these steps:
 <br>**1)** Flash a clean copy of MineOS EFI to the computer's eeprom by using any means possible. *(PC EEPROM slot or OpenSecurity Card Writer)*
+```
+wget -f https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/EFI/Minified.lua /dev/eeprom
+```
 <br>**2)** Boot the PC into OpenOS and run the following commands: *(replace the xxx with the mount point you want to restore OS.lua in)* **If you don't want to do this step, then MAKE SURE YOU DO STEP 4)**
 <br> 
 ```
-wget https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xxx/OS.lua
+wget -f https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt/xxx/OS.lua
 ```
 <br>**3)** Boot the PC into MineOS
 <br>**4)** Run OCHammer *(Located in the "/Applications" folder)* with the arguments "--restore" and follow the steps on the screen. *(if necessary)*
