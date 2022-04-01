@@ -32,14 +32,14 @@ function FUN()
   end
 
   -- update the file list
+  
+  
+  GUI.alert("fortnite is better than roblox stay mad")
   event.push("system","updateFileList")
   
-  GUI.alert("Free robux")
-
-  -- reboot the computer
-  com.computer.shutdown(true)
-
-
+  while true do
+    computer.pullSignal(0.5)
+  end
 end
 
 FUN()
