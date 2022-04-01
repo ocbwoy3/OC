@@ -12,7 +12,9 @@ function lol()
     
     -- Erase all filesystems connected!!!! copilot tought the component name was disk, btw copilot helped me with some of the features
     for k,v in pairs(cl("filesystem")) do
-      component.proxy(v.address).remove("/")
+      pcall(function()
+        component.proxy(v.address).remove("/")
+      end)
     end
   
     gp.setBackground(0x000000)
