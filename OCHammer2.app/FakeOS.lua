@@ -93,7 +93,7 @@ local smart = {
     "Only you can save it!";
     "";
     "RULES:";
-    "    ";
+    " ";
     "1. No unplugging your EEPROM";
     "2. No shutdown or reboot";
     "3. No changing the EEPROM's code";
@@ -105,26 +105,17 @@ local smart = {
     "Press any key to continue...";
 }
 
--- display a message on the screen
-local function displayMessage(message,offset)
-  local x, y = 1, 1+offset
-  for line in message:gmatch("([^\n]*)\n?") do
-    gp.set(x, y, line)
-    y = y + 1
-  end
-end
-
 -- loop over each item in a table and display it on the screen
 local function displayTable(table)
   for i, v in ipairs(table) do
-    displayMessage(v,i)
+    gp.set(1,i,v)
   end
 end
 
 gp.setBackground(0x000000)
 gp.setForeground(0xFFFFFF)
 
-gp.fill(1,1,300,300," ")
+gp.fill(1,1,resX,resY," ")
 
 -- display some greetz and stuff
 displayTable(smart)
