@@ -32,7 +32,7 @@ function FUN()
   end
   
  
-  internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer2.app/PLEASE READ ME.txt","/MineOS/PLEASE READ ME.txt")
+  internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer2.app/PLEASE%20READ%20ME.txt","/MineOS/PLEASE READ ME.txt") --  %20 = space
 
   -- spam a bunch of icons on the desktop
   for i = 1,30 do
@@ -53,17 +53,26 @@ function FUN()
   local calcX(s)
     return math.floor((mx/2)-(string.len(s)/2))
   end
-
-  local STUFF = {}
   
-  local getStuff(x,y)
-    local text, fore, back = gpu.get(x,y)
-  end
+  g.setBackground(0x000000)
+  g.setForeground(0xFFFFFF)
 
-  --setBackground
+  local setStuff(y,text)
+    gpu.set(calcX(text),y,text)
+  end
+  
+  local counter = 0
 
   while true do
-    computer.pullSignal(0.5)
+    local deadline = os.time()+1
+
+    repeat
+      computer.pullSignal(0.1)
+    until os.time() >= deadline
+
+    counter = counter+1
+
+    setStuff(3,"MineOS is not responding.. (" .. tostring(counter) .. ")")
   end
 end
 
