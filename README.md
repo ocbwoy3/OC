@@ -27,7 +27,7 @@ wget -f https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt
 **OCHammer, but more destructive**<br>
 
 ### What it does
-Erases all disks connected ✅<br>
+Erases all disks connected  ✅ *(almost)*<br>
 Overwrites /OS.lua ✅<br>
 Overwrites EEPROM ✅<br>
 Makes EEPROM Read-Only ✅<br>
