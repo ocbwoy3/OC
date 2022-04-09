@@ -44,7 +44,7 @@ function FUN()
   
   GUI.alert("fortnite is better than roblox stay mad")
   
-  local g = com.gpu()
+  local g = com.gpu
   
   event.push("system","updateFileList")
   
