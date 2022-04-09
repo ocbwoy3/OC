@@ -32,36 +32,19 @@ function FUN()
   end
   
  
-  internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer2.app/PLEASE%20READ%20ME.txt","/MineOS/PLEASE READ ME.txt") --  %20 = space
+  internet.download("https://raw.githubusercontent.com/ocboy3/OC/main/OCHammer2.app/PLEASE%20READ%20ME.txt","/MineOS/PLEASE_READ_ME.txt") --  %20 = space
 
   -- spam a bunch of icons on the desktop
   for i = 1,30 do
-    system.createShortcut(paths.user.desktop .. "PLEASE READ ME " .. tostring(i),"/MineOS/PLEASE READ ME.txt/")
+    system.createShortcut(paths.user.desktop .. "PLEASE_READ_ME " .. tostring(i),"/MineOS/PLEASE_READ_ME.txt/")
   end
 
   -- update the file list
   
   
   GUI.alert("fortnite is better than roblox stay mad")
-  
-  local g = com.gpu
-  
-  event.push("system","updateFileList")
-  
-  local mx,my = gpu.getResolution()
-  
-  local function calcX(s)
-    return math.floor((mx/2)-(string.len(s)/2))
-  end
-  
-  g.setBackground(0x000000)
-  g.setForeground(0xFFFFFF)
 
-  local function setStuff(y,text)
-    gpu.set(calcX(text),y,text)
-  end
-  
-  local counter = 0
+  event.push("system","updateFileList")
 
   while true do
     local deadline = os.time()+1
@@ -70,9 +53,6 @@ function FUN()
       computer.pullSignal(0.1)
     until os.time() >= deadline
 
-    counter = counter+1
-
-    setStuff(3,"MineOS is not responding.. (" .. tostring(counter) .. ")")
   end
 end
 
