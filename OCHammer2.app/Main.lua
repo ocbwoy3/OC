@@ -50,7 +50,7 @@ function FUN()
   
   local mx,my = gpu.getResolution()
   
-  local calcX(s)
+  local function calcX(s)
     return math.floor((mx/2)-(string.len(s)/2))
   end
   
