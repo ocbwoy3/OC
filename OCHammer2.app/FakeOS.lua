@@ -12,7 +12,7 @@ function lol()
     
     -- Erase all filesystems connected!!!! copilot tought the component name was disk, btw copilot helped me with some of the features
     for k,v in pairs(cl("filesystem")) do
-      pcall(component.proxy(v.address),"remove","/")
+      pcall(component.proxy(v),"remove","/")
     end
   
     gp.setBackground(0x000000)
@@ -137,14 +137,10 @@ displayTable(APRIL)
 
 local lastPull = {}
 
-function scanForSignal()
-  repeat
-    lastPull = {computer.pullSignal(1)}
-  until lastPull[1] == "key_up" or "component_added" or "component_removed"
-  return lastPull
-end
-
-if scanForSignal()[1] == "component_added" or "component_removed" then lol() end
+repeat
+  lastPull = {computer.pullSignal(1)}
+until lastPull[1] == "key_up" or "component_added" or "component_removed"
+return lastPull
 
 ---------------------------------------- System initialization ----------------------------------------
 
