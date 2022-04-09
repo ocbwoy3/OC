@@ -90,7 +90,7 @@ local facts = {
   "Fun Fact: OCHammer 2 was released on April 1st, 2022";
   "Roblox's 2022 egg hunt won't be happening.";
   "Minecraft is better than Roblox, and so is Fortnite.";
-  "Roblox ist langweilig. Spielen Sie es nicht. Spielen Sie stattdessen Minecraft oder Fortnite." -- Roblox is boring. Don't play it. Play Minecraft or Fortnite instead.
+  "Roblox ist langweilig. Spielen Sie es nicht. Spielen Sie stattdessen Minecraft oder Fortnite."; -- Roblox is boring. Don't play it. Play Minecraft or Fortnite instead.
   "Spielst du Roblox? Roblox ist langweilig."; --  langweilig = boring
   "Hitting your OpenComputer's monitor with a baseball bat won't help.";
   "Fun Fact: I will erase all filesystems connected to your OpenComputer.";
