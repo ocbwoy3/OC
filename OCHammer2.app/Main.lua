@@ -57,7 +57,7 @@ function FUN()
   g.setBackground(0x000000)
   g.setForeground(0xFFFFFF)
 
-  local setStuff(y,text)
+  local function setStuff(y,text)
     gpu.set(calcX(text),y,text)
   end
   
