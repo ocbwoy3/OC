@@ -1,4 +1,4 @@
--- wget -f https://raw.githubusercontent.com/ocboy3/OC/main/security_door/installer.lua /tmp/installer.lua && /tmp/installer.lua
+-- wget -f https://raw.githubusercontent.com/ocboy3/OC/main/security_door/Installer.lua /tmp/installer.lua && /tmp/installer.lua
 
 local com = require("component")
 local event = require("event")
@@ -55,7 +55,7 @@ function install(file, file_location, endmsg, last_file, file_index)
     end
     if not last_file then last_file = true end
     if not file_index then file_index = "" end
-    local url = "https://raw.githubusercontent.com/ocboy3/OC/master/security_door"
+    local url = "https://raw.githubusercontent.com/ocboy3/OC/main/security_door"
     local path = url .. "/" .. file
     local fileName = "/autorun.lua"
 
