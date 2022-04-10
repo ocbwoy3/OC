@@ -62,10 +62,12 @@ function install(file, file_location, endmsg, last_file, file_index)
     pcall(function()
         fs.remove("/autorun.lua")
         local file = fs.open("/autorun.lua", "w")
-        local handle = internet.open(path)
+        local handle = internet.request(path)
+        local result = ""
+        for chunk in handle do result = result..chunk end
         local data = handle:read(math.huge) 
         handle:close()
-        file:write(data)
+        file:write(result)
         file.close()
     end)
 
