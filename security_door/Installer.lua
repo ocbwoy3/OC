@@ -88,7 +88,7 @@ function listInstallOptions()
     local options = {
         {"1) Install server", function() install("/server.lua","/autorun.lua","The config can be accessed from the /autorun.lua file.") end},
         {"2) Install door", function() install("/door.lua","/autorun.lua","The config can be accessed from the /autorun.lua file.") end},
-        {"3) Install rolldoor", function() install("/rolldoor.lua","/autorun.lua","The config can be accessed from the /autorun.lua file.") end}
+        {"3) Install rolldoor", function() install("/rolldoor.lua","/autorun.lua","The config can be accessed from the /autorun.lua file.") end},
         {"4) Install card writer", function() install("/cardwriter.lua", "/home/cardwriter", false, "1 out of 2") install("/gui.lua","/lib/gui.lua","Writer can be accessed using /home/cardwriter.lua", true, "2 out of 2") end}
     }
 end
