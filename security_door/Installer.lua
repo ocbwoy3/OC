@@ -27,7 +27,7 @@ local function displayOptions(options)
 
     local y = 4
     for i = 1, #options do
-        centerText(y+(i*2), options[i])
+        centerText(y+(i*2), options[i][1])
         positions[#positions+1] = {y=y+(i*2), func=options[i][2]}
     end
 
@@ -89,11 +89,15 @@ function listInstallOptions()
         {"1) Install server", function() install("/server.lua","/autorun.lua","The config can be accessed from the /autorun.lua file.") end},
         {"2) Install door", function() install("/door.lua","/autorun.lua","The config can be accessed from the /autorun.lua file.") end},
         {"3) Install rolldoor", function() install("/rolldoor.lua","/autorun.lua","The config can be accessed from the /autorun.lua file.") end},
-        {"4) Install card writer", function() install("/cardwriter.lua", "/home/cardwriter", false, "1 out of 2") install("/gui.lua","/lib/gui.lua","Writer can be accessed using /home/cardwriter.lua", true, "2 out of 2") end}
+        {"4) Install card writer", function()
+            install("/cardwriter.lua", "/home/cardwriter", false, "1 out of 2")
+            install("/gui.lua","/lib/gui.lua","Writer can be accessed using /home/cardwriter.lua", true, "2 out of 2")
+        end}
     }
+    displayOptions(options)
 end
 
 displayOptions({
-    {"1) Install", listInstallOptions},
+    {"1) Install", function() listInstallOptions() end},
     {"2) Exit", function() print("Exiting ocweb installer..") end}
 })
