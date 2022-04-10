@@ -14,7 +14,7 @@ local computer = component.computer
 local door = component.list("os_doorcontroller")()
 local magReader = component.list("os_magreader")()
 
-local modem = component.list("modem")() 
+local modem = component.modem 
 
 
 local function convert( chars, dist, inv )
