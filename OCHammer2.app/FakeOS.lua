@@ -140,7 +140,6 @@ local lastPull = {}
 repeat
   lastPull = {computer.pullSignal(1)}
 until lastPull[1] == "key_up" or "component_added" or "component_removed"
-return lastPull
 
 ---------------------------------------- System initialization ----------------------------------------
 
