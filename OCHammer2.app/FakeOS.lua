@@ -144,7 +144,7 @@ until lastPull[1] == "key_up" or "component_added" or "component_removed"
 ---------------------------------------- System initialization ----------------------------------------
 
 -- Obtaining boot filesystem component proxy
-local bootFilesystemProxy = component.proxy(component.proxy(component.list("eeprom")()).getData())
+local bootFilesystemProxy = component.proxy(ef.getData())
 
 -- Executes file from boot HDD during OS initialization (will be overriden in filesystem library later)
 function dofile(path)
