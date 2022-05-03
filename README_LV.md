@@ -25,15 +25,24 @@ wget -f https://raw.githubusercontent.com/IgorTimofeev/MineOS/master/OS.lua /mnt
 <br>**7)** Atinstalē OCHammer no "App Store" 
 
 ## OCHammer 2
-**OCHammer, but more destructive**<br>
+**OCHammer, bet labāks**<br>
 
-### What it does
-Erases all disks connected  ✅ *(almost)*<br>
-Overwrites /OS.lua ✅<br>
-Overwrites EEPROM ✅<br>
-Makes EEPROM Read-Only ✅<br>
+### Ko tas dara
+Izdzēš visus pieslēgtos diskus  ✅ *(gandrīz)*<br>
+Pārraksta failu /OS.lua ✅<br>
+Pārraksta EEPROM ✅<br>
+Padara EEPROM tikai lasāmu ✅<br>
 <br>
-It's basically a destructive version of OCHammer.<br>
-Almost it's like Solaris Virus, but better.<br>
-Also, there is no known method of uninstalling.
+OCHammer 2 ir bīstamāka OCHammer<br>
+Gandrīz vai ka šis ir labāks Solaris Virus.<br>
+
+### Noteikumi
+**1.** Nedrīkst atslēgt komponentus<br>
+**2.** Nedrīkst rakstīt EEPROM<br>
+**3.** Nedrīkst izslēgt datoru<br>
+<br>
+**Nemēģini pat atinstalēt OCHammer 2**<br>
+<br>
+*sike! tu domāji ka mainot datora arhitektūru tu varēsi pārstartēt to*
+
 
