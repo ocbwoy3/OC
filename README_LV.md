@@ -1,3 +1,4 @@
+[english/angliski](https://github.com/ocboy3/OC/blob/main/README.md)
 # Foršas "OpenComputers" lietotnes kuras Es izveidoju
 Šajā repo ir gandrīz vai visas lietotnes kuras es izveidoju priekš MineOS. (OpenComputers)
 
@@ -44,5 +45,16 @@ Gandrīz vai ka šis ir labāks Solaris Virus.<br>
 **Nemēģini pat atinstalēt OCHammer 2**<br>
 <br>
 *sike! tu domāji ka mainot datora arhitektūru tu varēsi pārstartēt to*
-
+### Par GREETZ
+Skatoties OCHammer un OCHammer 2 failos, jūs varat noteikt, ka programmā ir references vārdam 'greetz' jeb 'sveicieni', lietotnes veidā un OS.lua<br>
+#### Kāpēc GREETZ?
+Greetz ir domāts lai dotu SLAVU draugiem, tiem kas kļūdas laboja utt.<br>
+#### EU KPC ES NEESMU GREETZos???😥😥
+Tev vienkārši jāpalīdz, jāķer kļūdas, jebkuru no tām, utt.<br>
+Ja gribat programmu vai kaut ko jaunu, sūtiet PR(pull request).<br>
+Ja pieņemšu ideju, jūs varat būt greetz sarakstā.<br>
+<br>
+##### Greetz
+Slava maniem draugiem un tiem kas palīdzēja:
+GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko
 
