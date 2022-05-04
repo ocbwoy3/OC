@@ -1,3 +1,4 @@
+[latviski/latvian](https://github.com/ocboy3/OC/blob/main/README_LV.md)
 # Cool OpenComputers apps I made
 This repository contains (almost) all of the apps for MineOS *(the ones I made)*
 
