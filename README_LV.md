@@ -48,13 +48,13 @@ Gandrīz vai ka šis ir labāks Solaris Virus.<br>
 ### Par GREETZ
 Skatoties OCHammer un OCHammer 2 failos, jūs varat noteikt, ka programmā ir references vārdam 'greetz' jeb 'sveicieni', lietotnes veidā un OS.lua<br>
 #### Kāpēc GREETZ?
-Greetz ir domāts lai dotu SLAVU draugiem, tiem kas kļūdas laboja utt.<br>
+Greetz ir domāts lai dotu SLAVU man, draugiem, tiem kas kļūdas laboja utt.<br>
 #### EU KPC ES NEESMU GREETZos???😥😥
 Tev vienkārši jāpalīdz, jāķer kļūdas, jebkuru no tām, utt.<br>
 Ja gribat programmu vai kaut ko jaunu, sūtiet PR(pull request).<br>
 Ja pieņemšu ideju, jūs varat būt greetz sarakstā.<br>
 <br>
 ##### Greetz
-Slava maniem draugiem un tiem kas palīdzēja:
+Slava man, maniem draugiem un tiem kas palīdzēja:
 GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko
 
