@@ -52,7 +52,7 @@ Greetz ir domāts lai dotu SLAVU man, draugiem, tiem kas kļūdas laboja utt.<br
 #### EU KPC ES NEESMU GREETZos???😥😥
 Tev vienkārši jāpalīdz, jāķer kļūdas, jebkuru no tām, utt.<br>
 Ja gribat programmu vai kaut ko jaunu, sūtiet PR(pull request).<br>
-Ja pieņemšu ideju, jūs varat būt greetz sarakstā.<br>
+Ja pieņemšu ideju, jūs laikam varat būt greetz sarakstā.<br>
 <br>
 ##### Greetz
 Slava man, maniem draugiem un tiem kas palīdzēja:
