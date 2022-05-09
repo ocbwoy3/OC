@@ -26,7 +26,7 @@ set(1,4,"All rights reserved.")
 computer.beep(1000,1)
 cset(11,1,0xFF0000,"/==/")
 wait(1)
-set(1,6,tostring(math.random(1000000,9999999)
+set(1,6,tostring(math.random(1000000,9999999))
 set(1,7,"The BIOS has detected 1024 KB of extended memory.")
 wait(1)
 
