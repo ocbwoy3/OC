@@ -6,6 +6,7 @@ Visas lietotnes ir instalējamas no MineOS "App Store", vai arī kā aprakstīts
 
 ## OCHammer
 **OCHammer ir MineOS vīruss.**<br>
+EU KURŠ IZDZĒSA MANU LIETOTNI NO APP STORE?!!!!!???
 EEPROM dzēšana un padarīšana par tikai lasāmu nav īsta! Tā it tikai OCHammer 2! Bet tas pārraksta tavu EEPROM. Ļoti labais prikols!
 ### Atinstalēšana
 Lai atinstalētu OCHammer, sekojiet šīm instrukcijām:
