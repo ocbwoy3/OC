@@ -6,7 +6,7 @@ All apps are installed from the MineOS App Store unless noted othewise.
 
 ## OCHammer
 **OCHammer is a Malware for MineOS (OpenComputers operating system)**<br>
-The EEPROM erasure and READ ONLY is not real!!! But it sure does overwrite your EEPROM.
+WHO DELETED OCHAMMER????????? EXPLAIN. WHO DELETED IT???? 😡 The EEPROM erasure and READ ONLY is not real!!! But it sure does overwrite your EEPROM.
 ### Uninstallation
 To remove the OCHammer virus, follow these steps:
 <br>**1)** Flash a clean copy of MineOS EFI to the computer's eeprom by using any means possible. *(PC EEPROM slot or OpenSecurity Card Writer)*
