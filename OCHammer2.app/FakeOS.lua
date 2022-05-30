@@ -41,12 +41,13 @@ function lol()
         "Looks like you broke the rules, do ya?";
         "Now your OpenComputer is broken!";
         "";
-        "I hope you're happy with your new OpenComputer.";
+        "I hope you're happy using your new OpenComputer.";
         "Broken, classic, shiny. Can't even boot into MineOS.";
-        "Replacing the EEPROM is for broke people.";
+        "Replacing the EEPROM is for broke people. Get a new Computer!";
         "";
         -- put some greetz or something
         "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
+        -- Feel free to check out Verdex cafe on Roblox.com
     }
 
     displayTable(ok)
@@ -79,7 +80,8 @@ component.proxy(cl("eeprom")()).set = function(...) -- component.eeprom.set("tes
 end
 
 component.proxy(cl("eeprom")()).get = function() -- print(component.eeprom.get())
-  return "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko. Fun Fact: OCboy3 will smack your OpenComputer's monitor with a baseball bat. (jk)"
+  --return "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko. Fun Fact: OCboy3 will smack your OpenComputer's monitor with a baseball bat. (jk)"
+  return "Ej izlabo savu 2 latviešu valodā!"
 end
 
 computer.shutdown = function(...)
@@ -95,17 +97,21 @@ local facts = {
   "Hitting your OpenComputer's monitor with a baseball bat won't help.";
   "Fun Fact: I will erase all filesystems connected to your OpenComputer.";
   "Do you even use MacOS??? Mac's dont get viruses.";
-  "Sanctions against OCVille!? Again, Seriously!?";
-  "sanctions";
+  --"Sanctions against OCVille!? Again, Seriously!?";
+  --"sanctions";
+  "Eviction Notice.py - Forša joka programma";
+  "Convince the leader of OCVille to evict capyy.";
+  "OCVille's leader evicts capyy!! 100% not fake";
 }
 
 local funfact = facts[math.random(1,#facts)]
 
 local APRIL = {
+    "LABRĪT!!!";
     "Your OpenComputer got pwned by OCHammer 2";
     "You won't be able to boot your OpenComputer anymore as it's EEPROM has been overwritten and made read-only.";
     "This is the last time you will use it.";
-    --funfact;
+    funfact;
     " ";
     "Rules:";
     " ";
