@@ -1,4 +1,4 @@
-[english/angliski](https://github.com/ocboy3/OC/blob/main/README.md)
+[english/angliski](https://github.com/ocboy3/OC/blob/main/README_en.md)
 # Foršas "OpenComputers" lietotnes kuras Es izveidoju
 Šajā repo ir gandrīz vai visas lietotnes kuras es izveidoju priekš MineOS. (OpenComputers)
 
