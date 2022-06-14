@@ -53,7 +53,7 @@ function lol()
     displayTable(ok)
     
     while true do
-      coroutine.yield(1)
+      computer.pullSignal(1)
     end
 
 end
