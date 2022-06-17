@@ -57,5 +57,5 @@ Ja pieņemšu ideju, jūs laikam varat būt greetz sarakstā.<br>
 <br>
 ##### Greetz
 Slava man, maniem draugiem un tiem kas palīdzēja:
-GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko
+GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko
 

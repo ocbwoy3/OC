@@ -46,7 +46,7 @@ function lol()
         "Unbox a Computer 2 is coming soon, so stay tuned for the release!"
         " ";
         -- put some greetz or something
-        "GREETZ: OCboy3, agentfish, Chouladalls, Kurhox, SirKamilMarko";
+        "GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko";
         -- Feel free to check out Verdex cafe on Roblox.com
     }
 
