@@ -4,6 +4,14 @@
 
 Visas lietotnes ir instalējamas no MineOS "App Store", vai arī kā aprakstīts šajā failā.
 
+## Bieži uzdotie Jautājumi
+Jaut.: Kapēc tika izveidota Atbalsta cikls programmām?
+<br>Atbilde: Es (OCboy3) nevaru visas lietotnes visu laiku paplašināt, labot kļūdas.
+<br><br>
+Jaut.: Vai OCAV tiks atbalstīta?
+<br>Atbilde: Varbūt. Līdz 2026. Gadam..
+<br><br>
+
 ## OCHammer
 **OCHammer ir MineOS vīruss.**<br>
 EU!!!!! KURŠ IZDZĒSA MANU LIETOTNI NO APP STORE?!!!!!???
@@ -59,3 +67,5 @@ Ja pieņemšu ideju, jūs laikam varat būt greetz sarakstā.<br>
 Slava man, maniem draugiem un tiem kas palīdzēja:
 GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko
 
+## OCAV
+Pro gamer antivīruss
