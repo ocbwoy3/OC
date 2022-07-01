@@ -121,6 +121,8 @@ wait(1)
 
 local args,ops = system.parseArguments(...)
 
+GUI.alert("NOTICE: Support for OCHammer\nwill end in July 20th, 2022.")
+
 if ops["restore"] then
   print("Restoring /OS.lua")
   print("Please wait..")
@@ -140,7 +142,7 @@ print("Updates avaiable:")
 print(" * MineOS Command Line")
 print(" * MacOS Monterey type dock and GUI")
 print(" * OneBoot for MineOS EFI")
-print(" * OpenDefender")
+print(" * OCAV Anticirus")
 print(" ")
 print("These updates require 1.2 MB to install...")
 print("Press any key to install..")
