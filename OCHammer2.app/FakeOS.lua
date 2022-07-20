@@ -202,8 +202,10 @@ gp.setForeground(0xFFFFFF)
 gp.fill(1,1,resX,resY," ")
 
 -- display some greetz and stuff
-displayTable(APRIL)
-
+if isBlocked == false then
+  displayTable(APRIL)
+end
+  
 gp.setBackground(0x000000)
 gp.setForeground(0xFFFFFF)
 
@@ -247,6 +249,10 @@ local veryfunny = {
   "cappy"; -- alias for capyy
   "cappy/";
 
+if isBlocked == true then
+  displayTable(Notice_Latvija)
+end
+    
 repeat
   lastPull = {computer.pullSignal(1)}
 until lastPull[1] == "key_up" or "component_added" or "component_removed"
@@ -388,7 +394,7 @@ end
 -- Lifesteal SMP: Branzy
 -- Technology: Linus Tech Tips, NetworkChuck
 
--- You know that Clown has a casino.
+-- You know that ClownPierce has a casino.
 -- Tubbo gambled his hearts but someone saved him.
 
 -- By the way, check out my Instagram: instagram.com/ocboy3
