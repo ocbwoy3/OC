@@ -30,12 +30,12 @@ local resX,resY = gp.maxResolution()
 
 -- By the way, Putin is a bad person.
 
-local bannedWebsites = [
-  "https://mail.ru", -- Mail
-  "https://yandex.ru", -- Yandex (Russian)
-  "https://rutube.ru", -- Russian youtube ripoff
-  "https://vk.com" -- VKontakte
-]
+local bannedWebsites = {
+  "https://mail.ru"; -- Mail
+  "https://yandex.ru"; -- Yandex (Russian)
+  "https://rutube.ru"; -- Russian youtube ripoff
+  "https://vk.com"; -- VKontakte
+}
 
 local isBlocked = false
 
