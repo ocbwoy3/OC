@@ -248,7 +248,8 @@ local veryfunny = {
   "capyy/";
   "cappy"; -- alias for capyy
   "cappy/";
-
+}
+  
 if isBlocked == true then
   displayTable(Notice_Latvija)
 end
