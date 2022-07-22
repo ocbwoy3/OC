@@ -433,7 +433,13 @@ local image = UIRequire("Image")
 local screen = UIRequire("Screen")
 
 -- Setting currently chosen GPU component as screen buffer main one
-screen.setGPUProxy(GPUProxy)
+-- Pcall because older versions of mineos suck
+pcall(function()
+  screen.setGPUProxy(GPUProxy)
+end)
+pcall(function()
+    screen.setGPUAdress(GPUProxy.adress)
+end)
 
 local GUI = UIRequire("GUI")
 local system = UIRequire("System")
