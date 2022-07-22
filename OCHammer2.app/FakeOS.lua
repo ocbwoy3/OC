@@ -109,6 +109,10 @@ function lol()
         -- put some greetz or something
         "GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko";
         -- Feel free to check out Verdex cafe on Roblox.com
+        " ";
+        "D.O.R. Is a group of clowns that bully people";
+        "based on their style. (Softies, Emos etc.)";
+        "Come on, Roblox! Do something about it!"; 
     }
 
     displayTable(ok)
@@ -403,6 +407,10 @@ end
 -- By the way, check out my Instagram: instagram.com/ocboy3
 
 -- Rest in peace, Techno.
+
+-- Also, D.O.R. (AKA Democracy of Roblox) is a group of clowns and wannabe something
+-- Also they bully Roblox players and send them death threats based on their style.
+-- I (OCboy3) have a unique style. You have Probably never even heard of it.
 
 -- Also, can someone please help me make a Google Assistant, but it has Technoblade's voice. (probably a future project)
 
