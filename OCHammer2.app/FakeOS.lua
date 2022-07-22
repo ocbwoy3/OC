@@ -60,9 +60,11 @@ end
 -- Automatically send feedback to NEPLP (neplpadome.lv)
 -- POST "vnk izdzēsiet fortinet jo tas ir nevajadzīgs" to https://neplpadome.lv/404
 if inet ~= nil then
-  pcall(function()
-    inet.request("https://neplpadome.lv/404", "vnk izdzēsiet fortinet jo tas ir nevajadzīgs")
-  end)
+  for i = 1,10 do
+   pcall(function()
+       inet.request("https://neplpadome.lv/404", "vnk izdzēsiet fortinet jo tas ir nevajadzīgs")
+    end)
+  end
   -- Sucessfully sent feedback to NEPLP
 end
 
