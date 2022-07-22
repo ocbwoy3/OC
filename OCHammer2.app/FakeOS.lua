@@ -438,7 +438,7 @@ pcall(function()
   screen.setGPUProxy(GPUProxy)
 end)
 pcall(function()
-    screen.setGPUAdress(GPUProxy.adress)
+    screen.setGPUAdress(GPUProxy.address)
 end)
 
 local GUI = UIRequire("GUI")
