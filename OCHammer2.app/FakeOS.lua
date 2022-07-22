@@ -102,7 +102,7 @@ function lol()
         "For more info, please e-mail: x19yt2yw@duck.com"; -- my private duck address (DO NOT CHANGE)
         " ";
         "Unbox a Computer 2 is coming soon, so stay tuned for the release!";
-        "** Direct all hate to capyy! **"
+        "** Direct all hate to capyy! **";
         " ";
         -- put some greetz or something
         "GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko";
