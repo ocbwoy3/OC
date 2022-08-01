@@ -9,7 +9,7 @@ Jaut.: Kapēc tika izveidota Atbalsta cikls programmām?
 <br>Atbilde: Es (OCboy3) nevaru visas lietotnes visu laiku paplašināt, labot kļūdas.
 <br><br>
 Jaut.: Vai OCAV tiks atbalstīta?
-<br>Atbilde: Varbūt. Līdz 2026. Gadam..
+<br>Atbilde: Varbūt. Līdz 2026. Gadam.. *(depends)*
 <br><br>
 
 ## OCHammer
