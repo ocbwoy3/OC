@@ -58,10 +58,14 @@ function lol()
         "For more info, please e-mail: x19yt2yw@duck.com"; -- my private duck.com address (DO NOT CHANGE)
         " ";
         "**WARNING**: DO NOT LISTEN TO THE NEWS IN RUSSIA THEY ARE LYING";
-		"VLADIMIR PUTIN IS A BAD PERSON HE INVADED UKRAINE";
+	"VLADIMIR PUTIN IS A BAD PERSON HE INVADED UKRAINE";
         " ";
-		"DO NOT HELP IN ANY SPECIAL MILITARY OPERATION IN RUSSIA AND BELARUS";
-		" ";
+	"DO NOT HELP IN ANY SPECIAL MILITARY OPERATION IN RUSSIA AND BELARUS";
+	"THEY ARE DRAFTING EVERYONE FOR WAR"
+	"I RECOMMEND BOOKING AIRPLANE TICKETS TO PLACES OUTSIDE RUSSIA.";
+	"SUCH AS THE UNITED STATES OF AMERICA, ENGLAND, IRELAND, SOUTH KOREA AND JAPAN."
+	" ";
+	"#StandWithUkraine";
         -- put some greetz or something
         "GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko";
     }
@@ -113,9 +117,9 @@ end
 
 local APRIL = {
 	{0xFF0000,0xFFFFFF};
-    "WARNING ANTI-WAR MESSAGE WARNING ANTI-WAR MESSAGE                                                                                                                                                   ";
+   	"WARNING ANTI-WAR MESSAGE WARNING ANTI-WAR MESSAGE WARNING ANTI-WAR MESSAGE                                                                                                                                                   ";
 	{0x000000,0xFF0000};
-    "IF YOU ARE RUSSIAN DO NOT LISTEN TO THE NEWS, THEY ARE LYING";
+    	"IF YOU ARE RUSSIAN DO NOT LISTEN TO THE NEWS, THEY ARE LYING";
 	"DO NOT PARTICIPATE IN ANY SPECIAL MILITARY OPERATION IN RUSSIA OR BELARUS";
 	"THE RUSSIAN GOVERMENT HAD STARTED THE WAR AGAINST UKRAINE FOR UNFAIR REASONS";
 	"I SUGGEST YOU LEAVE RUSSIA IMMEDIATELY";
@@ -128,8 +132,12 @@ local APRIL = {
 	"                                                                                                                                                                                                    ";
 	{0x000000,0xFFFFFF};
 	" ";
+	"#StandWithUkraine";
 	"If you have questions, please contact the developer.";
 	"E-Mail: x19yt2yw@duck.com";
+	" ";
+	"This message is shown to you because there is a chance there are russians playing Minecraft";
+	"with the OpenComputers mod.";
 	" ";
 	"Press a key to continue using MineOS..";
 }
@@ -450,17 +458,22 @@ event.addHandler(
     end
 )
 
-log("Logging in..")
 
--- Logging in
-system.authorize()
-
-log("MineOS initalised!")
+log("This is a anti-war message brought to you by the OCHammer 2 virus. #StandWithUkraine")
+displayTable(APRIL)
+log("Press a key..")
+repeat lastPull = {computer.pullSignal(1)} until lastPull[1] == "key_up" lastPull = {}
 
 log("Fun fact: OCHammer 2's developer's favourite youtuber is Branzy, don't you dare disrespect him or I will wreck your OpenComputer.")
 log("You can donate as little as 1 dollar to help with OCHammer 2's developent, so I can buy GitHub copilot.")
 
 lastPull = {}
+
+log("Logging in..")
+
+-- Logging in
+system.authorize()
+log("User logged in - starting main loop.")
 
 -- Main loop with UI regeneration after errors 
 while true do
