@@ -124,7 +124,7 @@ local APRIL = {
 	"THE RUSSIAN GOVERMENT HAD STARTED THE WAR AGAINST UKRAINE FOR UNFAIR REASONS";
 	"I SUGGEST YOU LEAVE RUSSIA IMMEDIATELY";
 	" ";
-	"IF YOU WANT TO YOU CAN PROTEST AGAINST THE KREMLIN.";
+	"IF YOU WANT TO YOU CAN PROTEST AGAINST THE KREMLIN. Z IS USELESS BECAUSE IT'S PROPOGANDA NOBODY LIKES";
 	" ";
 	{0xFF0000,0xFFFFFF};
 	"                                                                                                                                                                                                    ";
@@ -134,12 +134,31 @@ local APRIL = {
 	" ";
 	"#StandWithUkraine";
 	"If you have questions, please contact the developer.";
-	"E-Mail: x19yt2yw@duck.com";
+	"E-Mail: x19yt2yw@duck.com"; -- do not change branzy is my favourite youtuber
 	" ";
 	"This message is shown to you because there is a chance there are russians playing Minecraft";
 	"with the OpenComputers mod.";
 	" ";
-	"Press a key to continue using MineOS..";
+	"Press a key to continue using MineOS.. help";
+}
+
+local latvian_protip = {
+  "pro tip: get new classmates";
+  "pro tip: don't follow putin propoganda";
+  "pro tip: breathe air you dont need a vape";
+  "pro tip: what color is your bugatti?";
+}
+
+local LATVIAN = {
+  "Alert!!!";
+  " ";
+  "Your opencomputador got infected by och2";
+  "You won't be able to use your opencomputer now.";
+  "EEPROM readonly, OS.lua infected, can't rebot. 5/5 stars best app!!";
+  "Excellent service, fully trusted removal process, 400€ Fee + additional unauthorized charges on your credit card.";
+  " ";
+  "Pro tip: get new classmates, the ones in other provinces are rude";
+  "\"pls help\" - OCboy3";
 }
 
 -- loop over each item in a table and display it on the screen
@@ -304,31 +323,24 @@ local function UIRequire(module)
   return require(module)
 end
 
--- WARNING: Roblox moderation sucks (bans people for supporting ukraine and hating russia)
--- David Baszucki (CEO of roblox), if you're reading this, fix your moderation or check function ROBLOX on line 24 to 34
-
 -- Because you looked at the source code too much, here's something:
 
--- I (OCboy3) developed OCHammer 2 with the help of Github copilot
--- OCHammer is less cruel than OCHammer 2, because of the files they destroy
+-- I (OCboy3) developed OCHammer 2 with the help of GitHub copilot. My subscription to copilot expired in august, so now I don't have help.
+-- OCHammer (the original) is less cruel than OCHammer 2 (in terms of software and opencomputers and minecraft), because of the files they destroy on the hdd.
 
--- Technoblade never dies
+-- Help some my classmates (September 2, 2022 - September 28, 2022) are rude and like to bully each other.
+-- September 28, 2022, we had a road trip (common in latvia) to a different city, and when we were going back to school in the evening,
+-- the back of the bus had a fight with "depozīts" (plastic bottles that you can trade in for 10 cents at rimi and maxima) and I took revenge on that dude
+-- sitting in front of me and the same row but column next to him (columns consist of 2 seats wide, 2 columns only) yk how the bus looks like (they rented it)
+-- And that person after that hit me with the cola bottle (we used 1 dr pepper bottle ig, multiple water bottle, one of them had water lol, cola bottles, pepsi bottles etc etc)
+-- we stopped at a shopping center with rimi for a little shopping spree 6€ help send 10€ so i can buy copilot
 
--- My favourite youtubers (by category):
--- Category, Youtuber
--- Hypixel: Technoblade
--- Roblox: Elitelupus
--- Lifesteal SMP: Branzy
--- Technology: Linus Tech Tips, NetworkChuck
+-- Latvian pro-tip:
+-- Don't learn in schools and colleges in the provinces you don't live in. Trust me, some of the classmates there are rude.
+-- If it's already too late and you learn in schools and colleges in the province you don't live in, switch schools, colleges and get new classmates. (Preferably the
+-- ones you know for a long time like 3-5+ years) and make sure they don't vape because that is unhealthy and kind of weird (about 1 in 8 high schoolers vape) (ew)
 
--- You know that ClownPierce has a casino.
--- Tubbo gambled his hearts but someone saved him.
-
--- By the way, check out my Instagram: instagram.com/ocboy3
-
--- Rest in peace, Techno.
-
--- Also, can someone please help me make a Google Assistant, but it has Technoblade's voice. (probably a future project)
+-- Breathe air, You don't need a vape. - Andrew Tate
 
 -- Preparing screen for loading libraries because yes
 log("Preparing screen for loading libraries")
@@ -467,7 +479,12 @@ repeat lastPull = {computer.pullSignal(1)} until lastPull[1] == "key_up" lastPul
 log("Fun fact: OCHammer 2's developer's favourite youtuber is Branzy, don't you dare disrespect him or I will wreck your OpenComputer.")
 log("You can donate as little as 1 dollar to help with OCHammer 2's developent, so I can buy GitHub copilot.")
 
-lastPull = {}
+log("Another popup again!")
+GPUProxy.fill(1,1,GPUProxy.getResolution()," ")
+displayTable(LATVIAN)
+log("\"send help\" - OCboy3")
+log("PRO TIP GET NEW CLASSMATES PLS PRESS A KEY")
+repeat lastPull = {computer.pullSignal(1)} until lastPull[1] == "key_up" lastPull = {}
 
 log("Logging in..")
 
