@@ -340,6 +340,8 @@ end
 -- If it's already too late and you learn in schools and colleges in the province you don't live in, switch schools, colleges and get new classmates. (Preferably the
 -- ones you know for a long time like 3-5+ years) and make sure they don't vape because that is unhealthy and kind of weird (about 1 in 8 high schoolers vape) (ew)
 
+-- Help me I really want to switch schools so badly
+
 -- Breathe air, You don't need a vape. - Andrew Tate
 
 -- Preparing screen for loading libraries because yes
