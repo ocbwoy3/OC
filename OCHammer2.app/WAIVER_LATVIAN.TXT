@@ -1,0 +1,6 @@
+Instalējot OCHammer 2 vīrusu, jūs saprotat, ka lietojat programmatūru uz savu risku.
+Šīs programmatūras radītāji netiks turēti atbildīgi par jebkādu kaitējumu, kas varētu radīties jūsu datiem vai datoram, izmantojot programmatūru.
+Jūs arī piekrītat atsaukt jebkādu tiesību vērsties pret programmatūras radītājiem vai vīrusa izstrādātājiem par jebkādiem zaudējumiem vai kaitējumiem, kas varētu radīties programmatūras izmantošanas rezultātā.
+Šis atteikums attiecas uz visiem zaudējumiem vai kaitējumiem, tostarp tiešiem, netiešiem, incidentāliem, sekundāriem, emocionāliem, fiziskiem vai sodsabiedrības kaitējumiem.
+Jūs apzināties, ka esat izlasījis un sapratis/usi šo atteikumu, un ka jūs pilnībā apzināties riskus, ko rada OCHammer 2 vīrusa izmantošana.
+Instalējot šo vīrusu, jūs piekrītat šā atteikuma noteikumiem un jūs nekādā gadījumā nepārkāpsiet tā noteikumus.
