@@ -69,3 +69,20 @@ GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko
 
 ## OCAV
 Pro gamer antivīruss
+
+
+## SmashPassOC
+Aizliegtā pro gamer spēle kuru ar klasesbiedriem spēlējām pusdienu starpbrīdī pie 4. stāva durvīm pie 3. stāva atpūtas zonas.
+
+### KĀ ŠIS SŪDS DARBOJAS?
+Vnk.
+**šis sūdiņs tevi padarīs 100% down bad tpc esi uzmanīgs/a!**
+
+kkāds brīdinājuma texts par nsfw,
+tad uzspiež ok
+paņem random bildi no images mapes,
+displayo to un smash un pass pogas
+cilveks uzspiez pogu un radas jauna bilde lol
+
+## EU B*E? KUR KODS?
+nedošu a varbūt došu
