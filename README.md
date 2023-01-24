@@ -71,18 +71,18 @@ GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko
 Pro gamer antivīruss
 
 
-## SmashPassOC
+## Sm@$hP@$$OC
 Aizliegtā pro gamer spēle kuru ar klasesbiedriem spēlējām pusdienu starpbrīdī pie 4. stāva durvīm pie 3. stāva atpūtas zonas.
 
 ### KĀ ŠIS SŪDS DARBOJAS?
 Vnk.
 **šis sūdiņs tevi padarīs 100% down bad tpc esi uzmanīgs/a!**
 
-kkāds brīdinājuma texts par nsfw,
+kkāds brīdinājuma texts par kko,
 tad uzspiež ok
 paņem random bildi no images mapes,
-displayo to un smash un pass pogas
+displayo to un sm@$h un p@$$ pogas
 cilveks uzspiez pogu un radas jauna bilde lol
 
-## EU B*E? KUR KODS?
+### EU B*E? KUR KODS?
 nedošu a varbūt došu
