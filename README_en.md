@@ -1,2 +1,2 @@
-[go back here](https://github.com/ocboy3/OC/blob/main/README_LV.md)
+[go back here](https://github.com/ocboy3/OC)
 i dont feel like translating this
