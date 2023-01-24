@@ -44,7 +44,7 @@ Pārraksta EEPROM ✅<br>
 Padara EEPROM tikai lasāmu ✅<br>
 <br>
 OCHammer 2 ir bīstamāka OCHammer<br>
-Gandrīz vai ka šis ir labāks Solaris Virus.<br>
+Gandrīz vai ka šis ir labāks Solaris Virus. (RIP SOLARIS VIRUS)<br>
 
 ### Noteikumi
 **1.** Nedrīkst atslēgt komponentus<br>
