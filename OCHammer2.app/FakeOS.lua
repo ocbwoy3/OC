@@ -61,8 +61,8 @@ function lol()
 	"VLADIMIR PUTIN IS A BAD PERSON HE INVADED UKRAINE";
         " ";
 	"DO NOT HELP IN ANY SPECIAL MILITARY OPERATION IN RUSSIA AND BELARUS";
-	"THEY ARE DRAFTING EVERYONE FOR WAR"
-	"I RECOMMEND BOOKING AIRPLANE TICKETS TO PLACES OUTSIDE RUSSIA.";
+	"THEY ARE DRAFTING PEOPLE FOR WAR"
+	"BOOK ONE WAY AIRPLANE TICKETS TO PLACES OUTSIDE RUSSIA.";
 	"SUCH AS THE UNITED STATES OF AMERICA, ENGLAND, IRELAND, SOUTH KOREA AND JAPAN."
 	" ";
 	"#StandWithUkraine";
@@ -70,6 +70,8 @@ function lol()
         "GREETZ: OCboy3, agentfish, cantgetnormaluser, Chouladalls, Kurhox, SirKamilMarko";
     }
 
+    -- Siri will smack HunterTheWriter's iPhone off her hands, PRAIS OCH2 DEVELOPERS	
+	
     displayTable(ok)
     
     -- actually delete roblox off of the internet
@@ -485,7 +487,7 @@ log("Another popup again!")
 GPUProxy.fill(1,1,GPUProxy.getResolution()," ")
 displayTable(LATVIAN)
 log("\"send help\" - OCboy3")
-log("PRO TIP GET NEW CLASSMATES PLS PRESS A KEY")
+log("I am trapped in Latvia. I dont wan't to be drafted into the Latvian military once I'm 18.")
 repeat lastPull = {computer.pullSignal(1)} until lastPull[1] == "key_up" lastPull = {}
 
 log("Logging in..")
